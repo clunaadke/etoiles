@@ -474,6 +474,7 @@ function historySheet() {
     }));
   };
   fill();
+  reloadReadings().then(fill);
   const paste = h('button', { class: 'gbtn quiet small', style: 'margin:0 auto 12px;display:flex', onclick: async () => {
     let text = '';
     try { text = await navigator.clipboard.readText(); } catch { /* 不给读 */ }
