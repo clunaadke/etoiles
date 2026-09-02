@@ -58,6 +58,34 @@ function entry(cid, rev, cat) {
   const side = e[rev ? 'rev' : 'up'] || {};
   return [side[cat] || side.daily || '', side.advice || ''];
 }
+
+// 时态（0903 她抓的：日常那套文案全是「今天……」，落在过去 / 未来 / 本周 / 关系位上就不对）。
+// 表里的话按「今天」写，这里按牌位把「今天」换成对的时间词；过去位的建议不给（对过去提建议没意义）。
+const SCOPE = {
+  past: '之前', present: '眼下', future: '接下来',
+  axis: '这周', action: '这周', gentle: '这周',
+  me: '这段时间', him: '这段时间', between: '这段时间', block: '这段时间', toward: '接下来',
+};
+const PAST_VERBS = [['会好', '好过'], ['会来', '来过'], ['会发', '发过'], ['会乱', '乱过'], ['会比', '比'], ['会更', '更'], ['会很', '很'], ['会到', '到了'], ['会轻', '轻了'], ['会软', '软了'], ['会被', '被'], ['会觉', '觉得'], ['会踏', '踏'], ['会因', '因']];
+export function tense(text, position, question) {
+  if (!text) return text;
+  const isDaily = !question || question === DAILY_QUESTION;
+  if (position === 'answer' || !position) {
+    if (isDaily) return text;                      // 每日一牌：就是说今天
+    return text.replace(/今天|今日/g, '眼下').replace(/明天/g, '过两天').replace(/昨天/g, '之前');
+  }
+  const scope = SCOPE[position] || '这段时间';
+  let t = text.replace(/今天|今日/g, scope);
+  if (position === 'past') {
+    t = t.replace(/明天/g, '后来').replace(/昨天/g, '更早').replace(/适合/g, '一直在').replace(/会有/g, '有过');
+    for (const [a, b] of PAST_VERBS) t = t.split(a).join(b);   // 「会好」→「好过」这类，过去位不说将来话
+  } else if (position === 'future' || position === 'toward') {
+    t = t.replace(/明天/g, '再往后').replace(/昨天/g, '现在');
+  } else {
+    t = t.replace(/明天/g, '过两天').replace(/昨天/g, '之前');
+  }
+  return t;
+}
 const suitOf = (cid) => cid.split('_')[0];
 const numOf = (cid) => { const n = parseInt(cid.split('_')[1], 10); return Number.isNaN(n) ? -1 : n; };
 const isCourt = (cid) => suitOf(cid) !== 'major' && numOf(cid) >= 11;
@@ -150,9 +178,10 @@ export function overall(cards, category) {
 }
 
 // 一句话：拿最重的那张（先大牌，再最后一张）说
-export function oneline(cards, category) {
+export function oneline(cards, category, question) {
   let key = cards.find((c) => suitOf(c.id) === 'major') || cards[cards.length - 1];
-  const [text] = entry(key.id, key.reversed, category);
+  const [raw] = entry(key.id, key.reversed, category);
+  const text = tense(raw, cards.length > 1 ? key.position : 'answer', question);
   const first = text.split(/[。！？]/, 1)[0];
   const name = (CARD_BY_ID[key.id] || {}).name || key.id;
   return `${name}${key.reversed ? '逆位' : '正位'}定调：${first}。`;
@@ -174,7 +203,10 @@ export function build(reading, category) {
     const cid = c.id;
     const rev = !!c.reversed;
     const card = CARD_BY_ID[cid] || {};
-    const [text, advice] = entry(cid, rev, cat);
+    const [rawText, rawAdvice] = entry(cid, rev, cat);
+    const pos = sp.positions.length > 1 ? (c.position || '') : 'answer';
+    const text = tense(rawText, pos, reading.question);
+    const advice = pos === 'past' ? '' : tense(rawAdvice, pos, reading.question);
     const intro = sp.positions.length > 1 ? (POSITION_INTRO[c.position || ''] || '') : POSITION_INTRO.answer;
     const suit = suitOf(cid);
     const nature = suit === 'major' ? MAJOR_INTRO
@@ -193,7 +225,7 @@ export function build(reading, category) {
     cards: outCards,
     relations: relations(cards),
     advice: advices,
-    oneline: oneline(cards, cat),
+    oneline: oneline(cards, cat, reading.question),
   };
 }
 
