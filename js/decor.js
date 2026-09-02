@@ -63,7 +63,7 @@ const css = (c, a) => {
 };
 
 // 默认壁纸（她给的图，压过）：夜一张、日一张，各管各的。用户自己选了就盖过默认。没有文件就用代码画的天。
-export const DEFAULT_WALLPAPER = { night: null, day: null };
+export const DEFAULT_WALLPAPER = { night: 'assets/wallpaper-night.webp', day: 'assets/wallpaper-day.webp' };
 
 class Decor extends EventTarget {
   constructor() {
