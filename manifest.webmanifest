@@ -1,0 +1,17 @@
+{
+  "name": "Chambre des Étoiles · 占星室",
+  "short_name": "占星室",
+  "description": "一间安静的塔罗屋：78 张韦特牌，单张 / 三张 / 本周 / 关系四种牌阵，客观解读，接自己家的 AI。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a0d33",
+  "theme_color": "#1a0d33",
+  "lang": "zh",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

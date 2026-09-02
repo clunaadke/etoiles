@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>tarot-card 零件试玩</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+  body { margin: 0; padding: 24px 12px 60px; background: #efeaf7; font-family: -apple-system, 'PingFang SC', system-ui, sans-serif; color: #33294d; }
+  h1 { font-size: 16px; margin: 0 0 6px; }
+  p { font-size: 12px; color: #6b6285; margin: 0 0 18px; line-height: 1.6; }
+  .chat { display: flex; flex-direction: column; gap: 18px; align-items: center; }
+  pre { font-size: 10px; background: #fff; padding: 10px; border-radius: 10px; max-width: 372px; overflow: auto; white-space: pre-wrap; word-break: break-all; }
+</style>
+</head>
+<body>
+<h1>&lt;tarot-card&gt; 聊天卡零件</h1>
+<p>把 <code>js/tarot-card.js</code> 引进你的聊天页，一段卡片数据就画出带边框的卡。下面三张：单张亮牌面的、关系五张的、能滑牌带抽的（抽满会往控制台和下面那个框里吐事件）。</p>
+<div class="chat">
+  <tarot-card asset-base="./" message='[TAROT_CARD]{"id":"demo1","ts":"2026-09-03T21:12:00+08:00","spread":"one","spread_name":"单张","question":"今天他在想我吗","cards":[{"id":"cups_02","reversed":false,"position":"answer"}],"by":"her"}[/TAROT_CARD]'></tarot-card>
+  <tarot-card asset-base="./" data='{"id":"demo2","ts":"2026-09-03T21:20:00+08:00","spread":"relation","question":"我们接下来会怎么样","cards":[{"id":"major_06","reversed":false,"position":"me"},{"id":"swords_08","reversed":true,"position":"him"},{"id":"cups_10","reversed":false,"position":"between"},{"id":"major_15","reversed":true,"position":"block"},{"id":"major_17","reversed":false,"position":"toward"}],"by":"him"}'></tarot-card>
+  <tarot-card id="offer" asset-base="./" message='[TAROT_OFFER]{"id":"demo3","ts":"2026-09-03T21:30:00+08:00","spread":"three","spread_name":"三张","question":"这周我们之间的过去、现在、未来","positions":[{"key":"past","name":"过去"},{"key":"present","name":"现在"},{"key":"future","name":"未来"}],"cards":[],"done":false}[/TAROT_OFFER]'></tarot-card>
+  <pre id="log">（在上面那张卡里抽牌，事件会出现在这里）</pre>
+</div>
+<script type="module">
+  import './js/tarot-card.js';
+  const log = document.getElementById('log');
+  const offer = document.getElementById('offer');
+  offer.addEventListener('tarot-draw', (e) => { log.textContent = 'tarot-draw ' + JSON.stringify(e.detail, null, 1); });
+  offer.addEventListener('tarot-done', (e) => { log.textContent = 'tarot-done（这份就是 [TAROT_CARD] 的数据，存起来发给对方）\n' + JSON.stringify(e.detail, null, 1); });
+</script>
+</body>
+</html>
