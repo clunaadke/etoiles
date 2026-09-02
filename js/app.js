@@ -640,5 +640,7 @@ async function main() {
   await reloadReadings();
   render();
   if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+  // 开屏之后慢慢把 78 张牌面都拉一遍，进缓存，之后抽牌、图鉴、离线都不用再等
+  setTimeout(() => preloadAll(CARDS.map((c) => c.id)), 1500);
 }
 main();

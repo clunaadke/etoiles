@@ -10,21 +10,33 @@ export function setAssetBase(p) { assetBase = p; }
 export function cardImageURL(id) { return `${assetBase}assets/cards/${id}.webp`; }
 export function backImageURL() { return `${assetBase}assets/back.webp`; }
 
-// 备用图源：GitHub Pages 在有些地方（尤其国内）时好时坏，一张图拉不下来就换 jsDelivr 的镜像再试。
-// fork 了仓库的人把这里改成自己的 用户名/仓库名，或者在页面里设 window.CHAMBRE_CDN。
-export const CDN_BASE = (typeof window !== 'undefined' && window.CHAMBRE_CDN) || 'https://cdn.jsdelivr.net/gh/clunaadke/etoiles@main/';
+// 备用图源：GitHub Pages 在有些地方（尤其国内）时好时坏，一张图拉不下来就换镜像再试，几轮都不行就歇几秒再来一轮。
+// fork 了仓库的人把 GH_REPO 改成自己的 用户名/仓库名，或者在页面里设 window.CHAMBRE_MIRRORS = ['https://…/']。
+export const GH_REPO = 'clunaadke/etoiles';
+export const MIRRORS = (typeof window !== 'undefined' && window.CHAMBRE_MIRRORS) || [
+  `https://cdn.jsdelivr.net/gh/${GH_REPO}@main/`,
+  `https://fastly.jsdelivr.net/gh/${GH_REPO}@main/`,
+  `https://gcore.jsdelivr.net/gh/${GH_REPO}@main/`,
+  `https://raw.githubusercontent.com/${GH_REPO}/main/`,
+];
 export function cardImageSources(id) {
   const rel = `assets/cards/${id}.webp`;
-  const list = [assetBase + rel, assetBase + rel + '?r=1', CDN_BASE + rel];
-  return [...new Set(list)];
+  return [...new Set([assetBase + rel, ...MIRRORS.map((m) => m + rel), assetBase + rel + '?r=2'])];
 }
-/// 给 <img> 装上「失败就换下一个源」的手
+const ROUNDS = 4;
+/// 给 <img> 装上「失败就换下一个源，全失败歇一会儿再来一轮」的手
 function armFallback(img, sources) {
-  let i = 0;
+  let i = 0, round = 0;
   img.onerror = () => {
     i++;
-    if (i >= sources.length) { img.onerror = null; img.classList.add('broken'); return; }
-    setTimeout(() => { img.src = sources[i]; }, i === 1 ? 800 : 0);
+    if (i >= sources.length) {
+      round++;
+      if (round >= ROUNDS) { img.onerror = null; img.classList.add('broken'); return; }
+      i = 0;
+      setTimeout(() => { img.src = sources[0] + (sources[0].includes('?') ? '&' : '?') + 'r=' + round; }, 2500 * round);
+      return;
+    }
+    setTimeout(() => { img.src = sources[i]; }, 300);
   };
 }
 
@@ -84,20 +96,34 @@ export function emptySlot({ width = 92, active = false } = {}) {
 }
 
 /// 预热：把 78 张图全拉一遍（进图鉴 / 第一次抽牌前），失败不管
-export function preloadAll(ids) {
-  for (const id of ids) { const i = new Image(); const srcs = cardImageSources(id); armFallback(i, srcs); i.src = srcs[0]; }
+export function preloadAll(ids, { concurrency = 4 } = {}) {
+  const queue = ids.slice();
+  const next = () => {
+    const id = queue.shift();
+    if (!id) return;
+    const i = new Image(); const srcs = cardImageSources(id); armFallback(i, srcs);
+    const done = () => setTimeout(next, 60);
+    i.onload = done;
+    const orig = i.onerror; i.onerror = (e) => { orig?.(e); if (i.classList.contains('broken')) done(); };
+    i.src = srcs[0];
+  };
+  for (let k = 0; k < concurrency; k++) next();
 }
 
 /// 加载一张牌面（给 canvas 用），同样会换源重试
 export function loadCardImage(id) {
   const sources = cardImageSources(id);
   return new Promise((res, rej) => {
-    let i = 0;
+    let i = 0, round = 0;
     const tryNext = () => {
-      if (i >= sources.length) return rej(new Error('图片没加载出来'));
+      if (i >= sources.length) {
+        round++; i = 0;
+        if (round >= ROUNDS) return rej(new Error('图片没加载出来，网络不给力'));
+        return setTimeout(tryNext, 2500 * round);
+      }
       const img = new Image(); img.crossOrigin = 'anonymous';
       img.onload = () => res(img);
-      img.onerror = () => { i++; setTimeout(tryNext, i === 1 ? 800 : 0); };
+      img.onerror = () => { i++; setTimeout(tryNext, 300); };
       img.src = sources[i];
     };
     tryNext();

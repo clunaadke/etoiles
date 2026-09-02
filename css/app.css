@@ -23,11 +23,11 @@
 }
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-html, body { margin: 0; height: 100%; }
-/* 底色跟天的最下沿一个色：iPhone Safari 工具栏收起 / 弹出时露出来的那条就不扎眼 */
+/* 外壳一律 100vh（她踩出来的：iOS 加到主屏幕以后 100% / 100dvh 只撑到 WebKit 认的可视区，底下露一条；100vh 才铺到屏幕底）*/
+html, body { margin: 0; height: 100vh; }
 html { background: var(--sky-bottom); }
 body {
-  font-family: var(--sans); color: var(--ink); background: transparent; min-height: 100dvh;
+  font-family: var(--sans); color: var(--ink); background: transparent;
   overflow: hidden; overscroll-behavior: none; -webkit-user-select: none; user-select: none;
   -webkit-font-smoothing: antialiased;
 }
@@ -38,8 +38,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 p { margin: 0; }
 
 /* —— 天 —— */
-/* 天故意画得比屏幕大一圈：iPhone 上工具栏收放、加到主屏幕之后底下那条区域，不管是谁的地盘都盖住 */
-#sky { position: fixed; left: 0; right: 0; top: -120px; bottom: -240px; z-index: 0; overflow: hidden; }
+#sky { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 0; overflow: hidden; }
 #sky > * { position: absolute; inset: 0; }
 #sky .grad { position: absolute; inset: 0; background:
   radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%),
@@ -53,7 +52,7 @@ html[data-stars="0"] #sky canvas { display: none; }
 html[data-wallpaper="1"] #sky canvas { opacity: .85; }
 
 /* —— 屋子 —— */
-#app { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; }
+#app { position: relative; z-index: 1; height: 100vh; display: flex; flex-direction: column; }
 .header { display: flex; align-items: center; gap: 4px; padding: max(var(--sat), 20px) 6px 4px; padding-top: calc(max(var(--sat), 20px) + 6px); flex: none; }
 .header .ib { width: 34px; height: 38px; display: grid; place-items: center; color: var(--dim); flex: none; }
 .header .ib svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -94,7 +93,7 @@ html[data-wallpaper="1"] #sky canvas { opacity: .85; }
 /* —— 牌 —— */
 .tarot-face { position: relative; overflow: hidden; border-radius: calc(var(--w) * .07); isolation: isolate; box-shadow: 0 calc(var(--w) * .05) calc(var(--w) * .08) rgba(0,0,0,.45); flex: none; }
 .tarot-face img { display: block; width: 100%; height: 100%; object-fit: cover; filter: saturate(var(--card-sat)); background: rgba(128,128,128,.25); }
-.tarot-face img.broken { visibility: hidden; }
+.tarot-face img.broken { opacity: .35; }
 .tarot-face .mult { position: absolute; inset: 0; background: var(--card-mult); mix-blend-mode: multiply; }
 .tarot-face::after { content: ''; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--gold) 55%, transparent); pointer-events: none; }
 .tarot-face.reversed { transform: rotate(180deg); }
@@ -203,7 +202,7 @@ html[data-backimg="1"] .tarot-back:not(.bmp) .pat, html[data-backimg="1"] .tarot
 .reply { font-family: var(--serif); font-size: 13.5px; line-height: 1.75; white-space: pre-wrap; }
 
 /* —— 抽屉 / 全屏页 —— */
-.sheet { position: fixed; inset: 0; z-index: 20; display: flex; flex-direction: column; background: radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%), radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%), linear-gradient(var(--sky-top), var(--sky-mid) 50%, var(--sky-bottom)); color: var(--ink); transform: translateY(100%); transition: transform .32s cubic-bezier(.2,.8,.3,1); }
+.sheet { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 20; display: flex; flex-direction: column; background: radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%), radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%), linear-gradient(var(--sky-top), var(--sky-mid) 50%, var(--sky-bottom)); color: var(--ink); transform: translateY(100%); transition: transform .32s cubic-bezier(.2,.8,.3,1); }
 .sheet.open { transform: none; }
 html[data-wallpaper="1"] .sheet { background: var(--wallpaper) center / cover no-repeat; }
 .sheet .bar { display: flex; align-items: center; padding: calc(max(var(--sat), 14px) + 4px) 8px 6px; flex: none; }
