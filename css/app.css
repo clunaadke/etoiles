@@ -24,8 +24,10 @@
 
 * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
 html, body { margin: 0; height: 100%; }
+/* 底色跟天的最下沿一个色：iPhone Safari 工具栏收起 / 弹出时露出来的那条就不扎眼 */
+html { background: var(--sky-bottom); }
 body {
-  font-family: var(--sans); color: var(--ink); background: var(--sky-mid);
+  font-family: var(--sans); color: var(--ink); background: transparent; min-height: 100dvh;
   overflow: hidden; overscroll-behavior: none; -webkit-user-select: none; user-select: none;
   -webkit-font-smoothing: antialiased;
 }
@@ -36,7 +38,7 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 p { margin: 0; }
 
 /* —— 天 —— */
-#sky { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
+#sky { position: fixed; left: 0; right: 0; top: 0; bottom: 0; height: 100lvh; z-index: 0; overflow: hidden; }
 #sky .grad { position: absolute; inset: 0; background:
   radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%),
   radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%),
@@ -50,11 +52,11 @@ html[data-wallpaper="1"] #sky canvas { opacity: .85; }
 
 /* —— 屋子 —— */
 #app { position: relative; z-index: 1; height: 100%; display: flex; flex-direction: column; }
-.header { display: flex; align-items: center; gap: 10px; padding: max(var(--sat), 20px) 8px 4px; padding-top: calc(max(var(--sat), 20px) + 6px); flex: none; }
-.header .ib { width: 38px; height: 38px; display: grid; place-items: center; color: var(--dim); flex: none; }
+.header { display: flex; align-items: center; gap: 4px; padding: max(var(--sat), 20px) 6px 4px; padding-top: calc(max(var(--sat), 20px) + 6px); flex: none; }
+.header .ib { width: 36px; height: 38px; display: grid; place-items: center; color: var(--dim); flex: none; }
 .header .ib svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-.header .title { flex: 1; text-align: center; line-height: 1.15; }
-.header .title .fr { font-family: var(--hand); font-size: 21px; color: var(--ink); }
+.header .title { flex: 1; min-width: 0; text-align: center; line-height: 1.15; }
+.header .title .fr { font-family: var(--hand); font-size: clamp(15px, 5.2vw, 21px); color: var(--ink); white-space: nowrap; }
 .header .title .zh { font-family: var(--hand); font-size: 10px; letter-spacing: 3px; color: var(--gold-a); margin-top: 1px; }
 .page { flex: 1; min-height: 0; position: relative; }
 .scroll { height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; padding: 10px 18px calc(30px + var(--sab)); }
