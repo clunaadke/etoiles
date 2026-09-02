@@ -9,8 +9,9 @@ import { setBackBitmap, backImageURL } from './cards.js';
 const LS = (k) => 'chambre.' + k;
 
 function loadJSON(k, fallback) {
-  try { const v = localStorage.getItem(LS(k)); return v == null ? fallback : { ...fallback, ...JSON.parse(v) }; }
-  catch { return fallback; }
+  // 每次都给一份新的拷贝：夜 / 日两套要是共用同一个对象，改夜的会把日的一起改了（0903 她抓的）
+  try { const v = localStorage.getItem(LS(k)); return v == null ? { ...fallback } : { ...fallback, ...JSON.parse(v) }; }
+  catch { return { ...fallback }; }
 }
 function saveJSON(k, v) { try { localStorage.setItem(LS(k), JSON.stringify(v)); } catch { /* 私密模式等 */ } }
 
@@ -61,6 +62,9 @@ const css = (c, a) => {
   return `rgba(${Math.round(r * 255)},${Math.round(g * 255)},${Math.round(b * 255)},${alpha})`;
 };
 
+// 默认壁纸（她给的图，压过）：夜一张、日一张，各管各的。用户自己选了就盖过默认。没有文件就用代码画的天。
+export const DEFAULT_WALLPAPER = { night: null, day: null };
+
 class Decor extends EventTarget {
   constructor() {
     super();
@@ -109,7 +113,9 @@ class Decor extends EventTarget {
     }
     this.apply();
   }
-  get wallpaperURL() { return this.wallpaper[this.mode]; }
+  /// 当前这套的壁纸：自己选的 > 默认图 > 没有（代码画的天）
+  get wallpaperURL() { return this.wallpaper[this.mode] || DEFAULT_WALLPAPER[this.mode] || null; }
+  get wallpaperIsCustom() { return !!this.wallpaper[this.mode]; }
   async setWallpaper(file) {
     const blob = await downscale(file, 2400);
     await filePut('wallpaper-' + this.mode, blob);

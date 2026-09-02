@@ -559,7 +559,7 @@ function decorSheet() {
             h('div', { class: 'muted' }, '整间屋全屏铺一张，选牌阵、抽牌、看结果都是它。夜里、白天各存一张。'),
             h('div', { style: 'display:flex;gap:10px;flex-wrap:wrap' },
               h('button', { class: 'gbtn small', onclick: () => wpInput.click() }, decor.wallpaperURL ? '换一张' : '去相册选一张'),
-              decor.wallpaperURL ? h('button', { class: 'gbtn quiet small', onclick: async () => { await decor.clearWallpaper(); fill(); } }, '用回代码画的天') : null),
+              decor.wallpaperIsCustom ? h('button', { class: 'gbtn quiet small', onclick: async () => { await decor.clearWallpaper(); fill(); } }, '用回默認的') : null),
             h('div', { class: 'tog' }, '壁纸上面撒星星', sw(decor.stars, (v) => { decor.setStars(v); fill(); }, !decor.wallpaperURL)),
             wpInput))),
       h('div', { class: 'hr' }),
