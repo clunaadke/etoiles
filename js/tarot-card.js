@@ -204,7 +204,7 @@ export class TarotCardElement extends HTMLElement {
     });
     const drawKw = () => {
       const c = cards[this._sel] || cards[0];
-      kw.replaceChildren(h('span', 'n', c.name + (c.reversed ? ' · 逆位' : ' · 正位')), c.keywords.map((k) => h('span', 'pill', k)));
+      kw.replaceChildren(h('span', 'n', c.name + (c.reversed ? ' · 逆位' : ' · 正位')), ...c.keywords.map((k) => h('span', 'pill', k)));
     };
     if (spreadID === 'relation' && n === 5) {
       const rel = h('div', 'rel', cells);
