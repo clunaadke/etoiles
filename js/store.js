@@ -86,6 +86,18 @@ export async function deleteReading(id) {
   for (const a of ais) if (a.reading_id === id) await del('ai', a.key);
 }
 
+/// 收下一张聊天卡（自家机抽的 [TAROT_CARD]，或抽满的 [TAROT_OFFER]）当一条记录。同 id 已有就不重复
+export async function importCard(data) {
+  const id = String(data.id || newID());
+  if (await get('readings', id)) return null;
+  const cards = data.cards.map((c) => ({ id: c.id, reversed: !!c.reversed, position: c.position || '' }));
+  const isOffer = Array.isArray(data.positions);
+  const r = { id, ts: data.ts || nowISO(), spread: data.spread || 'one', question: (data.question || '').slice(0, 500),
+    cards, by: isOffer ? 'her' : (data.by === 'him' ? 'him' : 'her'), asked_by: isOffer ? 'him' : '', status: 'done', asked: true };
+  await put('readings', r);
+  return withInterp(r);
+}
+
 // —— AI 细解缓存 ——
 export async function aiGet(id, category) {
   if (category) return get('ai', `${id}|${category}`);

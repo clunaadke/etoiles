@@ -3,13 +3,14 @@
 // 抽屉：记录 / 图鉴 / 装修 / 设置（AI）。数据全在浏览器本地（store.js）。
 
 import { CARDS, CARD_BY_ID, SPREADS } from './data/deck.js';
-import { build, CATEGORIES, DAILY_QUESTION, WEEKLY_QUESTION, spreadOf, cardData } from './reading.js';
+import { build, CATEGORIES, DAILY_QUESTION, WEEKLY_QUESTION, spreadOf, cardData, askText } from './reading.js';
 import { decor, TINT_PRESETS, GLASS_PRESETS, rgbToHex } from './decor.js';
 import * as store from './store.js';
 import { cardFace, cardBack, emptySlot, preloadAll } from './cards.js';
 import { DeckBand } from './band.js';
-import { loadAI, saveAI, aiReady, readerLabel, aiDetail, aiAsk } from './ai.js';
+import { loadAI, saveAI, aiReady, readerLabel, homeLabel, aiDetail, aiAsk } from './ai.js';
 import { renderTicket, saveImage } from './ticket.js';
+import { parseMessage } from './tarot-card.js';
 
 // —— 小工具 ——
 function h(tag, attrs, ...children) {
@@ -346,7 +347,7 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
       if (a.advice) kids.push(para('建議', a.advice));
       if (a.oneline) kids.push(para('一句話', a.oneline));
     } else {
-      kids.push(h('div', { class: 'muted' }, '很想深挖的时候再按。一个不认识你的塔罗师，只看牌，写得很细。走你在设置里填的 AI。'));
+      kids.push(h('div', { class: 'muted' }, '很想深挖的时候再按。一个不认识你的塔罗师，只看牌，写得很细。走设置里「接別的模型」填的接口。'));
       kids.push(h('button', { class: 'gbtn quiet', style: 'font-size:14px;padding:11px', disabled: st.aiBusy, onclick: () => runAI(false) },
         st.aiBusy ? h('span', { class: 'spin' }) : null, st.aiBusy ? '寫著，要半分鐘…' : '讓 AI 細解'));
     }
@@ -365,30 +366,37 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
   store.aiGet(reading.id).then((hit) => { if (hit && !st.ai) { st.ai = hit; drawAI(); } });
   root.append(aiBox);
 
-  // 讓 X 解牌
+  // 讓 ta 解牌：两条路。一条是复制成一段话，贴给自家机（陈璟那样的、跑在自己电脑上的 AI）；
+  // 一条是接别的模型（设置里填的接口），回复存进这条记录。
   const askBox = h('div', null);
   function drawAsk() {
-    const name = readerLabel();
+    const home = homeLabel();
     const kids = [];
+    kids.push(h('button', { class: 'gbtn', style: 'margin-top:4px', onclick: async () => {
+      const text = askText(reading, home);
+      try { await navigator.clipboard.writeText(text); toast(`复制好了，贴给${home}就行`); }
+      catch { toast('复制不了，浏览器不给'); }
+      if (!reading.asked) { reading.asked = true; await store.updateReading(reading.id, { asked: true }); await reloadReadings(); }
+    } }, h('span', { html: ICON.bubble }), `複製給${home}`));
     if (reading.reply) {
-      kids.push(h('div', { class: 'glass block' }, h('div', { class: 'bh' }, `${escapeHTML(reading.reply.name || name)} 解的牌`,
+      kids.push(h('div', { class: 'glass block', style: 'margin-top:12px' }, h('div', { class: 'bh' }, `${reading.reply.name || '模型'} 解的牌`,
         h('button', { class: 'r hand', disabled: st.asking, onclick: () => runAsk() }, st.asking ? '解著…' : '再解一次')),
         h('div', { class: 'reply' }, reading.reply.text)));
     } else {
-      kids.push(h('button', { class: 'gbtn', style: 'margin-top:4px', disabled: st.asking, onclick: () => runAsk() },
-        st.asking ? h('span', { class: 'spin' }) : h('span', { html: ICON.bubble }), st.asking ? `${name} 看著牌…` : `讓 ${name} 解牌`));
+      kids.push(h('button', { class: 'gbtn quiet', style: 'margin-top:10px;font-size:15px', disabled: st.asking, onclick: () => runAsk() },
+        st.asking ? h('span', { class: 'spin' }) : null, st.asking ? '模型看著牌…' : '讓別的模型解牌'));
     }
     if (st.askError) kids.push(h('div', { class: 'err', style: 'text-align:center;margin-top:6px' }, st.askError));
     rc(askBox, ...kids);
   }
   async function runAsk() {
     if (st.asking) return;
-    if (!aiReady()) { toast('先去设置里填 AI 的地址、密钥、模型和人设'); openSheet(settingsSheet()); return; }
+    if (!aiReady()) { toast('先去设置里填模型的地址、密钥和模型名'); openSheet(settingsSheet()); return; }
     st.asking = true; st.askError = ''; drawAsk();
     try {
       const text = await aiAsk(reading);
       reading.reply = { name: readerLabel(), text, ts: store.nowISO() };
-      await store.updateReading(reading.id, { reply: reading.reply, asked: true });
+      await store.updateReading(reading.id, { reply: reading.reply });
       await reloadReadings();
     } catch (e) { st.askError = '没解出来：' + (e.message || e); }
     st.asking = false; drawAsk();
@@ -466,7 +474,19 @@ function historySheet() {
     }));
   };
   fill();
-  return sheet({ title: '占卜记录', sky: true, close: 'done' }, body);
+  const paste = h('button', { class: 'gbtn quiet small', style: 'margin:0 auto 12px;display:flex', onclick: async () => {
+    let text = '';
+    try { text = await navigator.clipboard.readText(); } catch { /* 不给读 */ }
+    if (!text || !/\[TAROT_(CARD|OFFER)\]/.test(text)) text = prompt(`把${homeLabel()}抽的那张卡（[TAROT_CARD]…[/TAROT_CARD]）贴这里`, '') || '';
+    const data = parseMessage(text);
+    if (!data || !Array.isArray(data.cards) || !data.cards.length) { if (text) toast('这不是一张塔罗卡'); return; }
+    try {
+      const r = await store.importCard(data);
+      await reloadReadings(); fill();
+      toast(r ? `收下了${homeLabel()}抽的牌` : '这张已经在记录里了');
+    } catch (e) { toast('收不下：' + (e.message || e)); }
+  } }, `貼入${homeLabel()}抽的牌`);
+  return sheet({ title: '占卜记录', sky: true, close: 'done' }, h('div', null, paste, body));
 }
 
 // 图鉴
@@ -562,11 +582,12 @@ function settingsSheet() {
   const base = h('input', { type: 'url', placeholder: 'https://api.deepseek.com', value: cfg.baseUrl, autocapitalize: 'off', autocomplete: 'off' });
   const key = h('input', { type: 'password', placeholder: 'sk-…', value: cfg.apiKey, autocomplete: 'off' });
   const model = h('input', { type: 'text', placeholder: 'deepseek-chat / claude-opus-5', value: cfg.model, autocapitalize: 'off', autocomplete: 'off' });
-  const name = h('input', { type: 'text', placeholder: 'ta 的名字', value: cfg.readerName });
+  const home = h('input', { type: 'text', placeholder: 'ta 的名字', value: cfg.homeName });
+  const name = h('input', { type: 'text', placeholder: '模型 / 塔罗师', value: cfg.readerName });
   const persona = h('textarea', { placeholder: '写给 AI 的人设：ta 是谁、跟你什么关系、怎么说话、叫你什么。解牌的时候会照这个来。', value: cfg.persona });
   const relay = h('input', { type: 'url', placeholder: '留空 = 浏览器直连', value: cfg.relay, autocapitalize: 'off', autocomplete: 'off' });
-  const save = () => { saveAI({ format: fmt.value, baseUrl: base.value.trim(), apiKey: key.value.trim(), model: model.value.trim(), readerName: name.value.trim(), persona: persona.value, relay: relay.value.trim() }); };
-  for (const el of [fmt, base, key, model, name, persona, relay]) el.addEventListener('change', save);
+  const save = () => { saveAI({ format: fmt.value, baseUrl: base.value.trim(), apiKey: key.value.trim(), model: model.value.trim(), readerName: name.value.trim(), homeName: home.value.trim(), persona: persona.value, relay: relay.value.trim() }); };
+  for (const el of [fmt, base, key, model, name, home, persona, relay]) el.addEventListener('change', save);
   const testBtn = h('button', { class: 'gbtn quiet small', onclick: async () => {
     save();
     if (!aiReady()) { toast('地址、密钥、模型三样都要填'); return; }
@@ -581,13 +602,18 @@ function settingsSheet() {
     catch (err) { toast('导不进去：' + (err.message || err)); }
   } });
   const body = h('div', { class: 'form' },
-    h('div', { class: 'muted' }, '「AI 細解」和「讓 ta 解牌」都走这里填的接口，从你的手机直接连过去，密钥只存在这台设备上。'),
+    h('div', { class: 'f' }, h('label', null, '自家機'),
+      h('div', { class: 'note' }, '跟你过日子的那个 AI，跑在你自己电脑上的。结果页「複製給 ta」会把这次的牌（牌名、正逆位、位置、关键词、客观解读）复制成一段话，贴给 ta 就能解。ta 自己也能抽：仓库里 cli/ 有一条命令，给 ta 装上就会用。')),
+    f('ta 叫什么', home, '按钮上会写「複製給 XX」。'),
+    h('div', { class: 'hr', style: 'height:1px;background:var(--glass-line);margin:8px 0' }),
+    h('div', { class: 'f' }, h('label', null, '接別的模型'),
+      h('div', { class: 'note' }, '没有自家机、或者想要一个不认识你的塔罗师：填一个模型接口。「AI 細解」和「讓別的模型解牌」走这里，从你的手机直接连过去，密钥只存在这台设备上。')),
     f('接口格式', fmt),
     f('接口地址', base, 'OpenAI 兼容填到域名或 /v1 就行，后面的 /chat/completions 我来补。'),
     f('密钥', key),
     f('模型', model),
-    f('讓誰解牌', name, '按钮上会写「讓 XX 解牌」。'),
-    f('人设', persona),
+    f('叫它什么（可选）', name, '「讓別的模型解牌」的回复会标这个名字。'),
+    f('人设（可选）', persona, '想让这个模型也有个身份就写；不写就是客观解。'),
     f('转发地址（可选）', relay, '有的接口不让网页直接连（CORS）。仓库里 proxy/relay.py 几十行，跑在自己机器上，把地址填这儿。'),
     testBtn,
     h('div', { class: 'hr', style: 'height:1px;background:var(--glass-line);margin:8px 0' }),

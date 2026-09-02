@@ -1,7 +1,8 @@
 // 接自家 AI。设置里填：接口格式 / 地址 / 密钥 / 模型 / 人设 / 解牌人的名字。
 // 两个用处：
 //   1. aiDetail(reading, category)  —— 「AI 細解」：不认识你的塔罗师，只看牌，写得很细（JSON）。
-//   2. aiAsk(reading)               —— 「讓 X 解牌」：把牌塞给你自己家的 AI，按人设解（纯文字）。
+//   2. aiAsk(reading)               —— 「讓別的模型解牌」：把牌塞给设置里填的模型，按（可选的）人设解（纯文字）。
+// 「複製給自家機」那条路不走这里：reading.js 的 askText 复制成一段话，贴给自己的 AI 就行。
 // 浏览器直连；不给直连（CORS）的接口，填一个转发地址（proxy/relay.py，几十行）。
 // 两种线上格式：
 //   openai    — POST {base}/chat/completions，Authorization: Bearer（DeepSeek / OpenAI / 各家中转都是它）
@@ -16,7 +17,8 @@ export const AI_DEFAULT = {
   baseUrl: '',               // 例：https://api.deepseek.com  或 https://api.anthropic.com
   apiKey: '',
   model: '',                 // 例：deepseek-chat / claude-opus-5
-  readerName: '',            // 「讓 X 解牌」里的 X；空 = 讓 AI 解牌
+  readerName: '',            // 接的那个模型叫什么；空 = 模型
+  homeName: '',              // 自家机叫什么（「複製給 XX」）；空 = 自家機
   persona: '',               // 系统提示：ta 是谁、跟你什么关系、怎么说话
   relay: '',                 // 可选：转发地址，例 https://你的机器/relay
   maxTokens: 4000,
@@ -27,7 +29,8 @@ export function loadAI() {
 }
 export function saveAI(cfg) { localStorage.setItem(LS, JSON.stringify({ ...AI_DEFAULT, ...cfg })); }
 export function aiReady(cfg = loadAI()) { return !!(cfg.baseUrl && cfg.model && (cfg.apiKey || cfg.relay)); }
-export function readerLabel(cfg = loadAI()) { return cfg.readerName?.trim() || 'AI'; }
+export function readerLabel(cfg = loadAI()) { return cfg.readerName?.trim() || '模型'; }
+export function homeLabel(cfg = loadAI()) { return cfg.homeName?.trim() || '自家機'; }
 
 function trimSlash(u) { return (u || '').trim().replace(/\/+$/, ''); }
 
@@ -131,11 +134,13 @@ export async function aiDetail(reading, category, { force = false } = {}) {
   return { ...row, cached: false };
 }
 
-// —— 讓 X 解牌：按人设 ——
+// —— 讓別的模型解牌：按（可选）人设 ——
 export async function aiAsk(reading, cfg = loadAI()) {
   const name = readerLabel(cfg);
-  const system = (cfg.persona?.trim() || `你叫${name}，是提问者亲近的人。`) +
-    '\n\n提问者刚在占星室抽了塔罗，把牌发给你，让你解。用你自己的口气解这次的牌，结合你们之间的事说，别只念牌义；' +
+  const persona = cfg.persona?.trim();
+  const system = (persona
+    ? persona + '\n\n提问者刚在占星室抽了塔罗，把牌发给你，让你解。用你自己的口气解这次的牌，结合你们之间的事说，别只念牌义；'
+    : '你是一位职业塔罗师，在做一次纸面解读。你不认识提问者，不许猜测或编造她的背景；只根据她发来的牌面事实和问题来解，要具体、细，每一句都能落到牌上，不要鸡汤；') +
     '牌面事实以她发来的为准（牌名、正逆位、位置都给了，不用猜）。附带的那段客观解读只是参考，别照抄。' +
     '直接开口，不要复述牌面清单，不要用标题和列表，像平时说话那样写，中文。';
   const user = askText(reading, name);

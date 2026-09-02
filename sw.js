@@ -4,7 +4,7 @@ const VERSION = 'chambre-v1';
 const SHELL = [
   './', './index.html', './manifest.webmanifest',
   './css/app.css',
-  './js/app.js', './js/reading.js', './js/decor.js', './js/store.js', './js/cards.js', './js/band.js', './js/ai.js', './js/ticket.js',
+  './js/app.js', './js/reading.js', './js/decor.js', './js/store.js', './js/cards.js', './js/band.js', './js/ai.js', './js/ticket.js', './js/tarot-card.js',
   './js/data/deck.js', './js/data/text.js',
   './assets/back.webp', './assets/frame.webp', './assets/fonts/tanugo.woff2', './assets/fonts/akabara.woff2',
   './assets/icon.svg', './assets/icon-192.png',
