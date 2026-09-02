@@ -38,7 +38,9 @@ input, textarea { -webkit-user-select: text; user-select: text; }
 p { margin: 0; }
 
 /* —— 天 —— */
-#sky { position: fixed; left: 0; right: 0; top: 0; bottom: 0; height: 100lvh; z-index: 0; overflow: hidden; }
+/* 天故意画得比屏幕大一圈：iPhone 上工具栏收放、加到主屏幕之后底下那条区域，不管是谁的地盘都盖住 */
+#sky { position: fixed; left: 0; right: 0; top: -120px; bottom: -240px; z-index: 0; overflow: hidden; }
+#sky > * { position: absolute; inset: 0; }
 #sky .grad { position: absolute; inset: 0; background:
   radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%),
   radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%),
