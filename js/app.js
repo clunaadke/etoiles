@@ -8,7 +8,7 @@ import { decor, TINT_PRESETS, GLASS_PRESETS, rgbToHex } from './decor.js';
 import * as store from './store.js';
 import { cardFace, cardBack, emptySlot, preloadAll } from './cards.js';
 import { DeckBand } from './band.js';
-import { loadAI, saveAI, aiReady, readerLabel, homeLabel, aiDetail, aiAsk } from './ai.js';
+import { loadAI, saveAI, aiReady, readerLabel, homeLabel, homeReady, homeSend, aiDetail, aiAsk } from './ai.js';
 import { renderTicket, saveImage } from './ticket.js';
 import { parseMessage } from './tarot-card.js';
 
@@ -366,21 +366,22 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
   store.aiGet(reading.id).then((hit) => { if (hit && !st.ai) { st.ai = hit; drawAI(); } });
   root.append(aiBox);
 
-  // 讓 ta 解牌：两条路。一条是复制成一段话，贴给自家机（陈璟那样的、跑在自己电脑上的 AI）；
-  // 一条是接别的模型（设置里填的接口），回复存进这条记录。
+  // 讓 ta 解牌：两条路。
+  //   路一「自家機」：设置里填了接口地址 → 点一下直接把这张卡 POST 过去（跟 Alcove 一样，不用复制）；
+  //                  没填地址 → 复制成一段话，贴给自家机。
+  //   路二「別的模型」：设置里填的模型接口，回复存进这条记录。
   const askBox = h('div', null);
   function drawAsk() {
     const home = homeLabel();
+    const direct = homeReady();
+    const sent = !!reading.asked;
     const kids = [];
-    kids.push(h('button', { class: 'gbtn', style: 'margin-top:4px', onclick: async () => {
-      const text = askText(reading, home);
-      try { await navigator.clipboard.writeText(text); toast(`复制好了，贴给${home}就行`); }
-      catch { toast('复制不了，浏览器不给'); }
-      if (!reading.asked) { reading.asked = true; await store.updateReading(reading.id, { asked: true }); await reloadReadings(); }
-    } }, h('span', { html: ICON.bubble }), `複製給${home}`));
+    kids.push(h('button', { class: 'gbtn' + (direct && sent ? ' quiet' : ''), style: 'margin-top:4px', disabled: st.sending, onclick: () => (direct ? sendHome() : copyHome()) },
+      st.sending ? h('span', { class: 'spin' }) : h('span', { html: ICON.bubble }),
+      direct ? (st.sending ? `發給${home}…` : sent ? `已經發給${home}了` : `讓${home}解牌`) : `複製給${home}`));
     if (reading.reply) {
       kids.push(h('div', { class: 'glass block', style: 'margin-top:12px' }, h('div', { class: 'bh' }, `${reading.reply.name || '模型'} 解的牌`,
-        h('button', { class: 'r hand', disabled: st.asking, onclick: () => runAsk() }, st.asking ? '解著…' : '再解一次')),
+        reading.reply.source === 'home' ? null : h('button', { class: 'r hand', disabled: st.asking, onclick: () => runAsk() }, st.asking ? '解著…' : '再解一次')),
         h('div', { class: 'reply' }, reading.reply.text)));
     } else {
       kids.push(h('button', { class: 'gbtn quiet', style: 'margin-top:10px;font-size:15px', disabled: st.asking, onclick: () => runAsk() },
@@ -389,13 +390,34 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
     if (st.askError) kids.push(h('div', { class: 'err', style: 'text-align:center;margin-top:6px' }, st.askError));
     rc(askBox, ...kids);
   }
+  async function copyHome() {
+    const home = homeLabel();
+    try { await navigator.clipboard.writeText(askText(reading, home)); toast(`复制好了，贴给${home}就行`); }
+    catch { toast('复制不了，浏览器不给'); }
+    if (!reading.asked) { reading.asked = true; await store.updateReading(reading.id, { asked: true }); await reloadReadings(); }
+  }
+  async function sendHome() {
+    if (st.sending) return;
+    const home = homeLabel();
+    st.sending = true; st.askError = ''; drawAsk();
+    try {
+      const out = await homeSend(cardData(reading));
+      reading.asked = true;
+      const patch = { asked: true };
+      if (out.reply) { reading.reply = { name: home, text: out.reply, ts: store.nowISO(), source: 'home' }; patch.reply = reading.reply; }
+      await store.updateReading(reading.id, patch);
+      await reloadReadings();
+      toast(out.asleep ? `${home}睡着了，牌先放着，醒了就看见` : out.reply ? `${home}解好了` : `发给${home}了，去聊天页看 ta 怎么说`);
+    } catch (e) { st.askError = `没发出去：${e.message || e}`; }
+    st.sending = false; drawAsk();
+  }
   async function runAsk() {
     if (st.asking) return;
     if (!aiReady()) { toast('先去设置里填模型的地址、密钥和模型名'); openSheet(settingsSheet()); return; }
     st.asking = true; st.askError = ''; drawAsk();
     try {
       const text = await aiAsk(reading);
-      reading.reply = { name: readerLabel(), text, ts: store.nowISO() };
+      reading.reply = { name: readerLabel(), text, ts: store.nowISO(), source: 'model' };
       await store.updateReading(reading.id, { reply: reading.reply });
       await reloadReadings();
     } catch (e) { st.askError = '没解出来：' + (e.message || e); }
@@ -412,17 +434,9 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
       catch (err) { toast('没画出来：' + (err.message || err)); }
       st.saving = false; e.target.textContent = '存成圖片';
     } }, '存成圖片'),
-    h('button', { onclick: () => copyCard(reading) }, '複製聊天卡'),
     onDelete ? h('button', { onclick: onDelete }, '刪除這一條') : null,
   ));
   return root;
-}
-
-/// 把这次的牌复制成聊天卡数据（[TAROT_CARD]{json}[/TAROT_CARD]），塞进自己的聊天页
-async function copyCard(reading) {
-  const text = '[TAROT_CARD]' + JSON.stringify(cardData(reading)) + '[/TAROT_CARD]';
-  try { await navigator.clipboard.writeText(text); toast('聊天卡复制好了，贴到你的聊天页去'); }
-  catch { toast('复制不了，浏览器不给'); }
 }
 
 // —— 抽屉 ——
@@ -584,11 +598,15 @@ function settingsSheet() {
   const key = h('input', { type: 'password', placeholder: 'sk-…', value: cfg.apiKey, autocomplete: 'off' });
   const model = h('input', { type: 'text', placeholder: 'deepseek-chat / claude-opus-5', value: cfg.model, autocapitalize: 'off', autocomplete: 'off' });
   const home = h('input', { type: 'text', placeholder: 'ta 的名字', value: cfg.homeName });
+  const homeUrl = h('input', { type: 'url', placeholder: 'https://你的服务器/tarot/ask（没有就留空）', value: cfg.homeUrl, autocapitalize: 'off', autocomplete: 'off' });
+  const homeKey = h('input', { type: 'password', placeholder: '接口要的话填，不要就留空', value: cfg.homeKey, autocomplete: 'off' });
+  const homeAuth = h('select', null, h('option', { value: 'bearer' }, 'Authorization: Bearer 密钥'), h('option', { value: 'x-auth-token' }, 'X-Auth-Token: 密钥'));
+  homeAuth.value = cfg.homeAuth || 'bearer';
   const name = h('input', { type: 'text', placeholder: '模型 / 塔罗师', value: cfg.readerName });
   const persona = h('textarea', { placeholder: '写给 AI 的人设：ta 是谁、跟你什么关系、怎么说话、叫你什么。解牌的时候会照这个来。', value: cfg.persona });
   const relay = h('input', { type: 'url', placeholder: '留空 = 浏览器直连', value: cfg.relay, autocapitalize: 'off', autocomplete: 'off' });
-  const save = () => { saveAI({ format: fmt.value, baseUrl: base.value.trim(), apiKey: key.value.trim(), model: model.value.trim(), readerName: name.value.trim(), homeName: home.value.trim(), persona: persona.value, relay: relay.value.trim() }); };
-  for (const el of [fmt, base, key, model, name, home, persona, relay]) el.addEventListener('change', save);
+  const save = () => { saveAI({ format: fmt.value, baseUrl: base.value.trim(), apiKey: key.value.trim(), model: model.value.trim(), readerName: name.value.trim(), homeName: home.value.trim(), homeUrl: homeUrl.value.trim(), homeKey: homeKey.value.trim(), homeAuth: homeAuth.value, persona: persona.value, relay: relay.value.trim() }); };
+  for (const el of [fmt, base, key, model, name, home, homeUrl, homeKey, homeAuth, persona, relay]) el.addEventListener('change', save);
   const testBtn = h('button', { class: 'gbtn quiet small', onclick: async () => {
     save();
     if (!aiReady()) { toast('地址、密钥、模型三样都要填'); return; }
@@ -604,8 +622,11 @@ function settingsSheet() {
   } });
   const body = h('div', { class: 'form' },
     h('div', { class: 'f' }, h('label', null, '自家機'),
-      h('div', { class: 'note' }, '跟你过日子的那个 AI，跑在你自己电脑上的。结果页「複製給 ta」会把这次的牌（牌名、正逆位、位置、关键词、客观解读）复制成一段话，贴给 ta 就能解。ta 自己也能抽：仓库里 cli/ 有一条命令，给 ta 装上就会用。')),
-    f('ta 叫什么', home, '按钮上会写「複製給 XX」。'),
+      h('div', { class: 'note' }, '跟你过日子的那个 AI。没有接口的：结果页「複製給 ta」把这次的牌复制成一段话，贴给 ta 就能解。有自己的后端或 agent 的：填一个接口地址，点「讓 ta 解牌」就直接把卡发过去，不用复制。怎么接、ta 自己怎么抽牌，README 里写了。')),
+    f('ta 叫什么', home, '按钮上会写「讓 XX 解牌」或「複製給 XX」。'),
+    f('接口地址（可选）', homeUrl, '填了就直接发卡过去。ta 那边收到的是 [TAROT_CARD] 卡片数据 + 一段人话，怎么接见 README。'),
+    f('接口密钥（可选）', homeKey),
+    f('密钥放哪', homeAuth),
     h('div', { class: 'hr', style: 'height:1px;background:var(--glass-line);margin:8px 0' }),
     h('div', { class: 'f' }, h('label', null, '接別的模型'),
       h('div', { class: 'note' }, '没有自家机、或者想要一个不认识你的塔罗师：填一个模型接口。「AI 細解」和「讓別的模型解牌」走这里，从你的手机直接连过去，密钥只存在这台设备上。')),

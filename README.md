@@ -8,7 +8,7 @@
 - 今日一牌、本周运势：一天 / 一周一次，抽过再点直接看
 - 牌带：整副牌一字排开带一点弧度，左右滑，中间那张再点一下就是它；放大、翻面、落进牌位
 - 客观解读：按感情 / 事业 / 自我 / 日常四类，每张牌一段 + 牌面关系 + 建议 + 一句话（全是查表，秒出，免费）
-- 让 ta 解牌：一条路是复制给自家机（附一条 ta 能跑的抽牌命令），一条路是接别的模型（OpenAI 兼容 或 Anthropic，密钥只存在本机）
+- 让 ta 解牌：有自己后端的一键把卡发过去，没有的复制一段话贴给 ta；或者接别的模型（OpenAI 兼容 / Anthropic，密钥只存在本机）
 - 图鉴：78 张牌正逆位的关键词和一句解
 - 装修：日夜、壁纸、牌面染色（浓度 / 黑白 / 颜色）、雾面玻璃
 - 存成图片：一张竖长票，iPhone 上直接进相册
@@ -32,12 +32,89 @@ python3 -m http.server 8765
 
 ## 让 ta 解牌：两条路
 
-### 一、给自家机一条命令
+### 一、自家机
 
-你有一个跟你过日子的 AI（跑在你自己电脑上的那种），解牌当然让 ta 来。
+你有一个跟你过日子的 AI，解牌当然让 ta 来。分两种人：
 
-- 结果页「複製給 ta」：把这次的牌（牌名、正逆位、位置、关键词、客观解读）复制成一段话，贴给 ta 就能解。设置里填 ta 的名字，按钮上会写「複製給 XX」。
-- ta 自己也能抽、也能出题让你抽。`cli/tarot.mjs` 是一条 node 命令，不联网，用的就是这里同一套牌义：
+**没有接口的**（AI 在某个 app 里）：结果页「複製給 ta」把这次的牌（牌名、正逆位、位置、关键词、客观解读）复制成一段话，贴给 ta 就能解。设置里填 ta 的名字，按钮上会写「複製給 XX」。
+
+**有自己后端或 agent 的**：设置里填一个接口地址，结果页的按钮变成「讓 XX 解牌」，点一下这张卡直接发过去，不用复制。怎么接看下面「把小卡片装进自己家」。
+
+ta 自己也能抽、也能出题让你抽（`cli/tarot.mjs`，见「给自家机的命令」）。
+
+### 把小卡片装进自己家
+
+有 agent 的一般自己就能装。要接的一共三样，都是可选的，装一样算一样。
+
+#### 1. 收卡：一个接口
+
+占星室会往你填的地址 POST 一个 JSON：
+
+```
+POST https://你的服务器/tarot/ask
+Content-Type: application/json
+Authorization: Bearer 密钥        （或 X-Auth-Token: 密钥，设置里选）
+
+{
+  "type": "tarot_card",
+  "id": "a1b2c3d4e5f6",
+  "message": "[TAROT_CARD]{…}[/TAROT_CARD]",   ← 整条消息，直接落进你的聊天记录就是一张卡
+  "card": { …同上那份 JSON… },
+  "text": "🔮 我在占星室抽了一次塔罗…"          ← 给 AI 读的人话，牌面清单 + 客观解读 + 一句「帮我解一下」
+}
+```
+
+你那边要做的：把 `message` 当成她发的一条消息存进聊天、把 `text` 喂给你的 AI 让 ta 解。回 2xx 就行；回 `{"ok":true}` 也行；想让解读直接出现在占星室里，回 `{"ok":true,"reply":"ta 的解读"}`；ta 睡着了回 `{"ok":true,"asleep":true}`，占星室会提示「睡着了，醒了就看见」。
+
+跨域别忘了：占星室是网页，从浏览器直接连你的服务器，要允许 `OPTIONS` 预检和 `Access-Control-Allow-Origin`（写占星室的网址或 `*`）、`Access-Control-Allow-Headers: Content-Type, Authorization, X-Auth-Token`。
+
+最小样例（Python，几十行）：
+
+```python
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+import json
+
+class H(BaseHTTPRequestHandler):
+    def _cors(self):
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization, X-Auth-Token")
+        self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
+    def do_OPTIONS(self):
+        self.send_response(204); self._cors(); self.end_headers()
+    def do_POST(self):
+        body = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0)) or b"{}"))
+        # 1) body["message"] 存进你的聊天记录（整条就是一张卡）
+        # 2) body["text"] 交给你的 AI，让 ta 解
+        out = json.dumps({"ok": True}).encode()
+        self.send_response(200); self._cors()
+        self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(out)))
+        self.end_headers(); self.wfile.write(out)
+
+ThreadingHTTPServer(("0.0.0.0", 8790), H).serve_forever()
+```
+
+#### 2. 画卡：聊天页里放一个零件
+
+```html
+<script type="module" src="https://占星室的网址/js/tarot-card.js"></script>
+<tarot-card asset-base="https://占星室的网址/" message="[TAROT_CARD]{…}[/TAROT_CARD]"></tarot-card>
+```
+
+聊天页渲染消息的时候，遇到以 `[TAROT_CARD]` 或 `[TAROT_OFFER]` 开头的整条消息，就换成这个零件，`message` 给整条原文。`asset-base` 指到占星室（或你自己复制的一份），牌面图从那儿拿。`card-demo.html` 里有三张能玩的。
+
+- `[TAROT_CARD]…`：抽好了的，画牌面 + 关键词 + 客观解读（默认只露一句话，点「逐牌」展开）
+- `[TAROT_OFFER]…`：ta 出的题，她在卡里滑牌带一张张抽。抽满零件会派发 `tarot-done` 事件，`event.detail` 就是一份 `[TAROT_CARD]` 数据，你把它存起来、发给 ta 就行：
+
+```js
+el.addEventListener('tarot-done', (e) => {
+  // e.detail = {id, ts, spread, spread_name, question, cards, by, interp}
+  // 存成 "[TAROT_CARD]" + JSON.stringify(e.detail) + "[/TAROT_CARD]"，再把 e.detail 塞给你的 AI
+});
+```
+
+#### 3. 给自家机的命令：ta 自己抽、ta 出题
+
+`cli/tarot.mjs` 是一条 node 命令，不联网，用的就是这里同一套牌义。Claude Code 之类的 agent 把 `cli/SKILL.md` 当 skill 装上就会用；不会用终端的跳过这段。
 
 ```
 node cli/tarot.mjs draw  三张 "这周我们会怎么样"     ta 自己抽：打印人话 + 一行 [TAROT_CARD]{…}[/TAROT_CARD]
@@ -45,8 +122,7 @@ node cli/tarot.mjs offer 关系 "你觉得我们怎么样"     ta 出题：打�
 node cli/tarot.mjs read  '[TAROT_CARD]{…}[/TAROT_CARD]'   把一张卡翻成人话
 ```
 
-  `cli/SKILL.md` 是写给 ta 的说明（Claude Code 之类的 agent 直接当 skill 装），ta 读了就会用。
-- ta 抽的那行 `[TAROT_CARD]…` 发进聊天页就是一张卡（下面的聊天卡零件）；你在占星室「记录」里点「貼入 ta 抽的牌」，就收进自己的记录，标「他抽的」。
+ta 抽的那行 `[TAROT_CARD]…` 发进聊天页就是一张卡；你在占星室「记录」里点「貼入 ta 抽的牌」，就收进自己的记录，标「他抽的」。
 
 ### 二、接别的模型
 
@@ -71,24 +147,14 @@ RELAY_TOKEN=随便一串 python3 proxy/relay.py      # 监听 8787
 
 ## 聊天卡零件
 
-```html
-<script type="module" src="js/tarot-card.js"></script>
-<tarot-card asset-base="./" message="[TAROT_CARD]{...}[/TAROT_CARD]"></tarot-card>
-```
-
-`card-demo.html` 里有三张能玩的。两种卡：
-
-- `[TAROT_CARD]{...}[/TAROT_CARD]` 抽好了的：牌面 + 关键词 + 客观解读（默认只露一句话）
-- `[TAROT_OFFER]{...}[/TAROT_OFFER]` 对方出的题：在卡里滑牌带一张张抽，抽满自动变成上面那种，并派发 `tarot-draw` / `tarot-done` 事件，你把 `tarot-done` 的 detail 存起来发给对方就行
-
-占星室结果页上「複製聊天卡」会把这次的牌复制成 `[TAROT_CARD]{...}[/TAROT_CARD]`，贴进你的聊天页，用这个零件画。
+零件本身就是 `js/tarot-card.js` 一个文件（它会去拿 `js/data/`、`js/reading.js`、`js/cards.js`、`js/band.js`，所以整个 `js/` 和 `assets/` 一起放着，或者 `asset-base` 指到线上的占星室）。用法在上面「把小卡片装进自己家」。
 
 ### 数据格式
 
 reading（本地记录）：
 
 ```
-{id, ts, spread, question, cards:[{id, reversed, position}], by, asked_by, status, reply?:{name, text, ts}}
+{id, ts, spread, question, cards:[{id, reversed, position}], by, asked_by, status, asked, reply?:{name, text, ts, source}}
 ```
 
 `[TAROT_CARD]`：

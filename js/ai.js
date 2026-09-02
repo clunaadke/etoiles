@@ -18,7 +18,10 @@ export const AI_DEFAULT = {
   apiKey: '',
   model: '',                 // 例：deepseek-chat / claude-opus-5
   readerName: '',            // 接的那个模型叫什么；空 = 模型
-  homeName: '',              // 自家机叫什么（「複製給 XX」）；空 = 自家機
+  homeName: '',              // 自家机叫什么（「讓 XX 解牌」）；空 = 自家機
+  homeUrl: '',               // 自家机的接口地址（可选）：填了就直接把卡 POST 过去，不填就复制一段话
+  homeKey: '',               // 自家机接口的密钥（可选）
+  homeAuth: 'bearer',        // 密钥放哪：bearer = Authorization: Bearer xxx；x-auth-token = X-Auth-Token: xxx
   persona: '',               // 系统提示：ta 是谁、跟你什么关系、怎么说话
   relay: '',                 // 可选：转发地址，例 https://你的机器/relay
   maxTokens: 4000,
@@ -31,6 +34,28 @@ export function saveAI(cfg) { localStorage.setItem(LS, JSON.stringify({ ...AI_DE
 export function aiReady(cfg = loadAI()) { return !!(cfg.baseUrl && cfg.model && (cfg.apiKey || cfg.relay)); }
 export function readerLabel(cfg = loadAI()) { return cfg.readerName?.trim() || '模型'; }
 export function homeLabel(cfg = loadAI()) { return cfg.homeName?.trim() || '自家機'; }
+export function homeReady(cfg = loadAI()) { return /^https?:\/\//.test((cfg.homeUrl || '').trim()); }
+
+// —— 讓自家機解牌：把这张卡直接 POST 给自家的后端 / agent ——
+// 请求：POST homeUrl，JSON {type:"tarot_card", id, message:"[TAROT_CARD]{…}[/TAROT_CARD]", card:{…}, text:"给 AI 读的人话"}
+// 回复：2xx 就算发出去了；回 JSON 里带 reply（字符串）的话，当作 ta 的解读存进记录。
+// 对方得允许跨域（Access-Control-Allow-Origin，OPTIONS 预检），README 里有样例。
+export async function homeSend(card, cfg = loadAI()) {
+  if (!homeReady(cfg)) throw new Error('还没填自家机的接口地址');
+  const headers = { 'Content-Type': 'application/json' };
+  const key = (cfg.homeKey || '').trim();
+  if (key) {
+    if (cfg.homeAuth === 'x-auth-token') headers['X-Auth-Token'] = key;
+    else headers.Authorization = 'Bearer ' + key;
+  }
+  const body = { type: 'tarot_card', id: card.id, message: '[TAROT_CARD]' + JSON.stringify(card) + '[/TAROT_CARD]', card, text: card.text };
+  const res = await fetch(cfg.homeUrl.trim(), { method: 'POST', headers, body: JSON.stringify(body) });
+  const raw = await res.text();
+  let json = null; try { json = JSON.parse(raw); } catch { /* 不是 JSON 也行 */ }
+  if (!res.ok) throw new Error(`HTTP ${res.status}：${json?.error?.message || json?.error || raw.slice(0, 120) || res.statusText}`);
+  const reply = typeof json?.reply === 'string' ? json.reply.trim() : '';
+  return { ok: true, reply, asleep: !!json?.asleep };
+}
 
 function trimSlash(u) { return (u || '').trim().replace(/\/+$/, ''); }
 

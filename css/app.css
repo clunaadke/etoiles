@@ -202,7 +202,7 @@ html[data-backimg="1"] .tarot-back:not(.bmp) .pat, html[data-backimg="1"] .tarot
 .reply { font-family: var(--serif); font-size: 13.5px; line-height: 1.75; white-space: pre-wrap; }
 
 /* —— 抽屉 / 全屏页 —— */
-.sheet { position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: 20; display: flex; flex-direction: column; background: radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%), radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%), linear-gradient(var(--sky-top), var(--sky-mid) 50%, var(--sky-bottom)); color: var(--ink); transform: translateY(100%); transition: transform .32s cubic-bezier(.2,.8,.3,1); }
+.sheet { position: fixed; left: 0; right: 0; top: 0; height: 100vh; z-index: 20; display: flex; flex-direction: column; background: radial-gradient(320px 320px at 20% 25%, var(--nebula-a), transparent 70%), radial-gradient(300px 300px at 85% 70%, var(--nebula-b), transparent 70%), linear-gradient(var(--sky-top), var(--sky-mid) 50%, var(--sky-bottom)); color: var(--ink); transform: translateY(100%); transition: transform .32s cubic-bezier(.2,.8,.3,1); }
 .sheet.open { transform: none; }
 html[data-wallpaper="1"] .sheet { background: var(--wallpaper) center / cover no-repeat; }
 .sheet .bar { display: flex; align-items: center; padding: calc(max(var(--sat), 14px) + 4px) 8px 6px; flex: none; }
@@ -280,5 +280,5 @@ html[data-wallpaper="1"] .sheet { background: var(--wallpaper) center / cover no
 
 @media (min-width: 560px) {
   #app { max-width: 480px; margin: 0 auto; }
-  .sheet { max-width: 480px; margin: 0 auto; }
+  .sheet { left: calc(50% - 240px); right: auto; width: 480px; }
 }
