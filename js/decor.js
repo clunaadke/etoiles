@@ -4,6 +4,7 @@
 // 所有颜色算完写成 CSS 变量挂在 <html> 上，页面只认变量。
 
 import { fileGet, filePut, fileDelete } from './store.js';
+import { setBackBitmap, backImageURL } from './cards.js';
 
 const LS = (k) => 'chambre.' + k;
 
@@ -175,6 +176,8 @@ class Decor extends EventTarget {
     r.setProperty('--back-edge', css(col, 0.75));
     r.setProperty('--back-edge2', css(col, 0.35));
 
+    this.renderBack(col);
+
     const wp = this.wallpaperURL;
     r.setProperty('--wallpaper', wp ? `url("${wp}")` : 'none');
     document.documentElement.dataset.wallpaper = wp ? '1' : '0';
@@ -182,6 +185,53 @@ class Decor extends EventTarget {
     this.dispatchEvent(new Event('change'));
   }
 }
+
+// —— 牌背位图 ——
+// 跟 CSS 那套一样的配方：压暗的渐变底 + 黑底白线的星盘染成线色、叠两层 screen + 里外两圈细线。
+// 画一次 300×516，所有牌背共用一张图，滑牌带的时候 iPhone 不用逐张算 mask 和混合。
+let backSrc = null;
+let backSrcLoading = null;
+Decor.prototype.renderBack = function (col) {
+  const key = col.map((x) => x.toFixed(3)).join(',');
+  if (this._backKey === key) return;
+  this._backKey = key;
+  const draw = () => {
+    if (!backSrc || this._backKey !== key) return;
+    const W = 300, H = 516;
+    const cv = document.createElement('canvas'); cv.width = W; cv.height = H;
+    const ctx = cv.getContext('2d');
+    const rgb = (c, k = 1, a = 1) => `rgba(${Math.round(c[0] * 255 * k)},${Math.round(c[1] * 255 * k)},${Math.round(c[2] * 255 * k)},${a})`;
+    const g = ctx.createLinearGradient(0, 0, 0, H); g.addColorStop(0, rgb(col, 0.30)); g.addColorStop(1, rgb(col, 0.10));
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    // 线：星盘（灰度）× 线色 → 得到「亮处是线色、暗处是黑」的一层
+    const line = col.map((x) => x + (1 - x) * 0.22);
+    const lc = document.createElement('canvas'); lc.width = W; lc.height = H;
+    const lctx = lc.getContext('2d');
+    const k = Math.min((W * 0.94) / backSrc.width, (H * 0.94) / backSrc.height);
+    const dw = backSrc.width * k, dh = backSrc.height * k;
+    lctx.fillStyle = '#000'; lctx.fillRect(0, 0, W, H);
+    lctx.drawImage(backSrc, (W - dw) / 2, (H - dh) / 2, dw, dh);
+    lctx.globalCompositeOperation = 'multiply'; lctx.fillStyle = rgb(line); lctx.fillRect(0, 0, W, H);
+    ctx.globalCompositeOperation = 'screen';
+    ctx.drawImage(lc, 0, 0);
+    ctx.globalAlpha = 0.7; ctx.drawImage(lc, 0, 0); ctx.globalAlpha = 1;
+    ctx.globalCompositeOperation = 'source-over';
+    // 里圈细线（外圈留给 CSS 的 ::after，跟着圆角走）
+    const rr = (x, y, w, h, r) => { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); };
+    ctx.strokeStyle = rgb(col, 1, 0.35); ctx.lineWidth = 2;
+    rr(W * 0.06, H * 0.06, W * 0.88, H * 0.88, W * 0.05); ctx.stroke();
+    const url = cv.toDataURL('image/jpeg', 0.86);   // 不透明，jpeg 够了，比 png 小七八倍
+    setBackBitmap(url);
+    document.documentElement.style.setProperty('--back-img', `url("${url}")`);
+    document.documentElement.dataset.backimg = '1';
+    this.dispatchEvent(new Event('back'));
+  };
+  if (backSrc) { draw(); return; }
+  if (!backSrcLoading) {
+    backSrcLoading = new Promise((res) => { const i = new Image(); i.onload = () => { backSrc = i; res(); }; i.onerror = () => res(); i.src = backImageURL(); });
+  }
+  backSrcLoading.then(draw);
+};
 
 async function downscale(file, maxSide) {
   const bmp = await createImageBitmap(file);

@@ -4,7 +4,7 @@
 import { CARD_BY_ID } from './data/deck.js';
 import { spreadOf } from './reading.js';
 import { decor } from './decor.js';
-import { cardImageURL } from './cards.js';
+import { loadCardImage } from './cards.js';
 
 const W = 390;
 const SCALE = 3;
@@ -68,7 +68,7 @@ export async function renderTicket(reading, interp) {
   const hand = "'Tanugo', 'PingFang TC', system-ui, sans-serif";
   const serif = "'Songti SC', 'Noto Serif CJK SC', Georgia, serif";
   const sans = "-apple-system, 'PingFang SC', 'Noto Sans CJK SC', system-ui, sans-serif";
-  const images = await Promise.all(reading.cards.map((c) => loadImage(cardImageURL(c.id))));
+  const images = await Promise.all(reading.cards.map((c) => loadCardImage(c.id)));
   try { await document.fonts.load(`20px 'Tanugo'`); } catch { /* 没字体就系统的 */ }
 
   // 先量高度：用一张临时 canvas 走一遍排版
