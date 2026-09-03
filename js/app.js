@@ -296,7 +296,7 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
   const root = h('div', { class: 'scroll result' });
   const head = h('div', { class: 'head' }, h('div', { class: 'r' }, 'READING'),
     h('div', { class: 'd' }, dateText(reading.ts), h('span', { class: 'tag tint' }, sp.name),
-      reading.by === 'him' || reading.asked_by === 'him' ? h('span', { class: 'tag gold' }, reading.by === 'him' ? '他抽的' : '他出的題') : null));
+      reading.by === 'him' || reading.asked_by === 'him' ? h('span', { class: 'tag gold' }, reading.by === 'him' ? 'ta 抽的' : 'ta 出的題') : null));
   root.append(head);
   if (reading.question) root.append(h('div', { class: 'glass q' }, h('div', { class: 'label', style: 'padding:0' }, '所問'), h('div', { class: 't' }, reading.question)));
   for (const d of reading.cards) {
@@ -317,7 +317,7 @@ export function readingView(reading, { onAgain, onDelete } = {}) {
     if (!ip) { rc(interpBox); return; }
     const cats = h('div', { class: 'cats' }, Object.entries(CATEGORIES).map(([id, name]) => {
       const on = (st.category || ip.category) === id;
-      const label = { love: '感情', work: '事業', self: '自我', daily: '日常' }[id] || name;
+      const label = { love: '感情', work: '事業', self: '自我', life: '日常' }[id] || name;
       return h('button', { class: 'pillbtn' + (on ? ' on' : ''), onclick: () => { st.category = id; st.interp = build(reading, id); drawInterp(); } }, label);
     }));
     rc(interpBox, 
@@ -482,7 +482,7 @@ function historySheet() {
         h('div', { class: 'fan' }, r.cards.slice(0, 3).map((d) => cardFace(d.id, { reversed: d.reversed, width: 34 }))),
         h('div', { class: 'rc' },
           h('div', { class: 'rt' }, dateText(r.ts), h('span', { class: 'sp' }, sp.name),
-            r.by === 'him' || r.asked_by === 'him' ? h('span', { class: 'tag gold', style: 'font-size:9px' }, r.by === 'him' ? '他抽的' : '他出的題') : null,
+            r.by === 'him' || r.asked_by === 'him' ? h('span', { class: 'tag gold', style: 'font-size:9px' }, r.by === 'him' ? 'ta 抽的' : 'ta 出的題') : null,
             r.reply ? h('span', { style: 'color:var(--gold);font-size:9px' }, '●') : null),
           h('div', { class: 'rq' }, r.question || r.cards.map((d) => CARD_BY_ID[d.id]?.name).filter(Boolean).join(' · '))),
         h('span', { class: 'chev', html: ICON.chev }));

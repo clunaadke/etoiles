@@ -2,9 +2,9 @@
  "major_00": {
   "_name": "愚人",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -14,7 +14,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -24,7 +24,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -34,7 +34,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -44,9 +44,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -56,7 +56,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -66,7 +66,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -76,7 +76,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -89,9 +89,9 @@
  "major_01": {
   "_name": "魔术师",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -101,7 +101,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -111,7 +111,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -121,7 +121,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -131,9 +131,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -143,7 +143,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -153,7 +153,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -163,7 +163,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -176,9 +176,9 @@
  "major_02": {
   "_name": "女祭司",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -188,7 +188,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -198,7 +198,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -208,7 +208,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -218,9 +218,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -230,7 +230,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -240,7 +240,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -250,7 +250,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -263,9 +263,9 @@
  "major_03": {
   "_name": "皇后",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -275,7 +275,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -285,7 +285,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -295,7 +295,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -305,9 +305,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -317,7 +317,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -327,7 +327,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -337,7 +337,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -350,96 +350,96 @@
  "major_04": {
   "_name": "皇帝",
   "up": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事要的是秩序和担当：定规矩、立边界、说到做到。答案偏向「稳」，但稳是你亲手搭出来的，不是等来的。",
+    "day": "今天适合处理正式的、规矩的事：文件、账目、跟机构打交道。守时守约，今天这些都有回报。",
+    "week_main": "这一周的核心是立规矩：作息、边界、该拍板的事。你会比平时更想把生活放进一个框架里，这是对的，框架会托住你。",
+    "week_caution": "要注意的是太硬。规矩立起来之后容易变成对自己和别人的苛刻，把人际弄僵。这周留一点例外的余地。",
+    "week_action": "这周定一条规矩，从今天开始执行，不给自己找借口。一条就够，别一口气定十条。",
+    "past": "之前有一段你把生活管得很严的日子：有结构、有纪律、也有点硬。那段秩序是现在这件事能站住的地基。",
+    "present": "眼下你在当那个扛事的人：定方向、担责任、把事情放进框架里。累，但稳。这个阶段靠的是执行，不是灵感。",
+    "future": "照现在这样走，前面是一段稳定、有序、说到做到的日子。不会有惊喜，但也不会塌。想要更多，得先守住这份稳。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情需要结构：明确的承诺、边界和责任。有一方在扛事，稳定，可能有点硬。问「靠不靠得住」，答案偏向靠得住。",
+    "day": "今天适合把感情里的事说清楚：约定、边界、谁负责什么。ta 今天听得进正式的话，别绕弯。",
+    "week_main": "这一周感情的主线是「定下来」：关系在往更稳、更有承诺的方向走。少一点撒娇，多一点两个人一起把事定下来。",
+    "week_caution": "要注意的是控制：一方管得太多，另一方开始憋着。这周问自己一句：我是在保护这段关系，还是在管着 ta。",
+    "week_action": "这周和 ta 一起定一件事：一个约定、一个计划、一条底线。定下来就照做，这比说一百句喜欢都稳。",
+    "past": "之前这段关系里有过一个立规矩的阶段：谁扛什么、什么不能碰，都是那时候说清楚的。现在的稳定是那时候打下的。",
+    "present": "眼下这段关系是稳的、有担当的，ta 或者你在认真扛着。热烈少一点，但可靠。这个阶段别嫌它闷，闷是安全的另一面。",
+    "future": "往后看，这段感情会走向更明确的承诺和更稳的结构。前提是别把「稳」变成「管」，让规矩护着人，而不是压着人。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事要靠秩序和执行拿下：定计划、守纪律、该拍板就拍板。答案是「能」，但要用管的办法做，不能靠临场发挥。",
+    "day": "今天适合做需要权威和纪律的事：定规矩、排计划、跟上级打交道。今天你的话有分量，用好它。",
+    "week_main": "这一周工作的主线是掌控：把散着的事放进框架，把该定的定下来。你会是那个拿主意的人，别躲。",
+    "week_caution": "要注意的是独断：太想控制，听不进别人的话，把团队弄僵。这周拍板之前至少问一个人的意见。",
+    "week_action": "这周把手上最乱的那件事列成一张有先后顺序的清单，然后按顺序做。皇帝的本事就是把乱的变成有序的。",
+    "past": "之前工作上有一段你靠纪律和结构撑过来的日子：定规矩、按计划走、扛住了。那段经验是你现在的方法论。",
+    "present": "眼下工作上你在掌控的位置上：定方向、担责任、别人看着你。这个阶段需要的不是灵感，是稳定的执行和清楚的规矩。",
+    "future": "照现在的走法，工作上会进入一段稳定有序的时期：权责清楚、进展可控。不刺激，但扎实。守住结构，别中途松手。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你正在给自己立秩序。作息、原则、边界，像一个负责任的大人那样对待自己的生活。这是你现在最需要的。",
+    "day": "今天对自己严一点：该做的做完，该睡的时候睡。今天的自律会让明天的你轻松。",
+    "week_main": "这一周你的内在主题是「建结构」：想把散掉的生活重新搭起来，靠纪律而不是靠情绪推着走。这股劲是对的。",
+    "week_caution": "要注意的是对自己太狠：把规矩定成了鞭子，一没做到就自责。这周允许自己有一天做不到。",
+    "week_action": "这周给自己定一个固定的小仪式：每天同一个时间做同一件事。结构是从一个小锚点长出来的。",
+    "past": "之前你有过一段把自己管得很好的时候：有纪律、有边界、站得住。那段自律是你现在可以随时拿回来的东西。",
+    "present": "眼下你在当自己的皇帝：立规矩、守边界、扛责任。累是累，但你站得比之前稳。这个阶段别嫌自己无趣。",
+    "future": "往后看，你会变得更稳、更有边界、更像一个能托住自己的人。前提是规矩要护着你，别变成压着你的东西。"
    }
   },
   "rev": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事里的秩序出了问题：要么有人管得太死，要么根本没人拿主意。答案是「先把结构理顺」，不然做什么都散。",
+    "day": "今天容易跟规矩、跟长辈、跟上级起冲突。别硬碰，也别全让，把事和人分开。",
+    "week_main": "这一周的底色是失衡：要么太硬要么太散，规矩变成了刁难，或者压根没有规矩。你会觉得事情不在掌控里。",
+    "week_caution": "要注意的是僵：明知道一条规矩不合适还死守着，或者反过来，什么都放任。这周找一找中间那条线。",
+    "week_action": "这周松一格：把最死的那条规矩放宽一点，看看天塌不塌。或者反过来，把最散的那件事定一条底线。",
+    "past": "之前有一段秩序失衡的日子：可能是被管得太死，可能是没人负责、事情散着。那段经历让你现在对「规矩」这件事很敏感。",
+    "present": "眼下你在跟秩序较劲：要么在反抗一个太硬的规矩，要么在为没人拿主意而焦虑。这个阶段先别急着推翻或建立，先看清哪里失衡。",
+    "future": "照现在这样走，前面会有一段失控或僵化的时间：该定的定不下来，或者定了的压得人喘不过气。转机在于有人肯调整。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情里有控制的问题：一方管得太多，另一方在反抗或假装顺从。或者相反，没人扛事，事事悬着。答案是「先把硬的软下来，软的硬起来」。",
+    "day": "今天感情里容易起权力的冲突：谁听谁的、谁说了算。今天别争这个，争赢了也是输。",
+    "week_main": "这一周感情的主线是失衡：控制和反抗在拉扯，或者两个人都在等对方拿主意。这周的功课是看见这个模式。",
+    "week_caution": "要注意的是用「为你好」当理由去管 ta。爱和控制的界线这周特别容易糊。问自己：这是 ta 要的，还是我要的。",
+    "week_action": "这周把一件你一直替 ta 决定的事交回给 ta。或者反过来，把一件一直悬着的事主动定下来。",
+    "past": "之前这段关系里有过控制和反抗的阶段：一方管、一方躲，或者谁都不肯担。那段拉扯留下的痕迹，是现在关系里的硬结。",
+    "present": "眼下这段关系的结构是歪的：要么有人管得太死，要么没人扛事。这个阶段别急着谈将来，先把「谁负责什么」理清。",
+    "future": "往后看，如果控制和逃避的模式不改，这段感情会往僵和冷的方向走。转机在于有一方先放下「必须听我的」。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事卡在权威上：上面的人独断、僵化，或者你自己在该拍板的时候躲了。答案是「先把决定权理清」，不然做什么都白做。",
+    "day": "今天工作上容易遇到不讲理的规矩、不听人的上级，或者自己在该拿主意的时候犹豫。别硬顶，先记下来。",
+    "week_main": "这一周工作的主线是结构失灵：规矩变成了刁难，或者没人负责、事情散着。你会觉得使不上劲。",
+    "week_caution": "要注意的是两种极端：要么跟权威硬碰，要么完全躺平。这周都不要，把该守的守住，把该说的说出去。",
+    "week_action": "这周找出一条明显不合理的流程或规矩，想清楚它为什么不合理，然后正式地提出来。别抱怨，提方案。",
+    "past": "之前工作上有过一段被管得太死、或者完全没人管的日子。那段经历让你对权威有戒心，这份戒心在影响你现在的判断。",
+    "present": "眼下工作上的结构是失衡的：权责不清，或者上面的人太硬。这个阶段别硬拼，先弄清楚谁说了算、边界在哪。",
+    "future": "照现在的走法，工作上会有一段权威失灵的时间：决策慢、规矩乱、人心散。守住自己那一块的秩序，别跟着乱。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你对自己要么太严，严到僵；要么完全没有自律，日子散着。你是哪一种，自己知道。答案是往中间走。",
+    "day": "今天容易对自己苛刻，或者容易放纵。两头都别去，把今天最要紧的一件事做完就好。",
+    "week_main": "这一周你的内在主题是失衡：想自律又做不到，一做不到就自责，越自责越散。这个循环这周要看见。",
+    "week_caution": "要注意的是把「纪律」当成惩罚自己的工具。规矩是用来托住你的，不是用来打你的。",
+    "week_action": "这周只守一条规矩，最小的那条，守住就算赢。其他的先放下。自律是从一个能守住的小承诺重建的。",
+    "past": "之前你有过一段跟自己较劲的日子：要么把自己管得太狠，要么完全放任。那段失衡是你现在对「规矩」又想要又抗拒的原因。",
+    "present": "眼下你的内在秩序是乱的：想立规矩立不起来，或者立了太多压得自己喘不过气。这个阶段先别加新规矩，先减。",
+    "future": "往后看，如果继续在苛刻和放纵之间摆，会越来越不信任自己。转机在于找到一条你真的守得住的底线，从它开始。"
    }
   }
  },
  "major_05": {
   "_name": "教皇",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -449,7 +449,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -459,7 +459,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -469,7 +469,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -479,9 +479,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -491,7 +491,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -501,7 +501,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -511,7 +511,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -524,9 +524,9 @@
  "major_06": {
   "_name": "恋人",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -536,7 +536,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -546,7 +546,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -556,7 +556,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -566,9 +566,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -578,7 +578,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -588,7 +588,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -598,7 +598,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -611,9 +611,9 @@
  "major_07": {
   "_name": "战车",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -623,7 +623,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -633,7 +633,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -643,7 +643,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -653,9 +653,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -665,7 +665,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -675,7 +675,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -685,7 +685,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -698,9 +698,9 @@
  "major_08": {
   "_name": "力量",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -710,7 +710,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -720,7 +720,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -730,7 +730,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -740,9 +740,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -752,7 +752,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -762,7 +762,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -772,7 +772,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -785,9 +785,9 @@
  "major_09": {
   "_name": "隐士",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -797,7 +797,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -807,7 +807,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -817,7 +817,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -827,9 +827,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -839,7 +839,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -849,7 +849,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -859,7 +859,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -872,9 +872,9 @@
  "major_10": {
   "_name": "命运之轮",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -884,7 +884,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -894,7 +894,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -904,7 +904,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -914,9 +914,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -926,7 +926,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -936,7 +936,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -946,7 +946,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -959,9 +959,9 @@
  "major_11": {
   "_name": "正义",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -971,7 +971,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -981,7 +981,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -991,7 +991,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1001,9 +1001,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1013,7 +1013,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1023,7 +1023,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1033,7 +1033,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1046,9 +1046,9 @@
  "major_12": {
   "_name": "倒吊人",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1058,7 +1058,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1068,7 +1068,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1078,7 +1078,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1088,9 +1088,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1100,7 +1100,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1110,7 +1110,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1120,7 +1120,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1133,9 +1133,9 @@
  "major_13": {
   "_name": "死神",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1145,7 +1145,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1155,7 +1155,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1165,7 +1165,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1175,9 +1175,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1187,7 +1187,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1197,7 +1197,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1207,7 +1207,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1220,9 +1220,9 @@
  "major_14": {
   "_name": "节制",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1232,7 +1232,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1242,7 +1242,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1252,7 +1252,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1262,9 +1262,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1274,7 +1274,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1284,7 +1284,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1294,7 +1294,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1307,9 +1307,9 @@
  "major_15": {
   "_name": "恶魔",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1319,7 +1319,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1329,7 +1329,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1339,7 +1339,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1349,9 +1349,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1361,7 +1361,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1371,7 +1371,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1381,7 +1381,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1394,9 +1394,9 @@
  "major_16": {
   "_name": "高塔",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1406,7 +1406,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1416,7 +1416,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1426,7 +1426,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1436,9 +1436,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1448,7 +1448,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1458,7 +1458,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1468,7 +1468,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1481,9 +1481,9 @@
  "major_17": {
   "_name": "星星",
   "up": {
-   "daily": {
+   "life": {
     "single": "这件事的答案是「会好的」。不是马上翻盘，是伤口在合、信心在回来，往前走的路已经亮了一点。它要你做的不多：别再往坏处想，把水一点点浇回去。",
-    "daily": "今天心情会松下来，灵感也会来。适合做喜欢的事，也适合对未来做一点温柔的规划。别把这份轻盈拿去和过去算账，就单纯地过好这一天。",
+    "day": "今天心情会松下来，灵感也会来。适合做喜欢的事，也适合对未来做一点温柔的规划。别把这份轻盈拿去和过去算账，就单纯地过好这一天。",
     "week_main": "这一周的底色是恢复。前阵子紧着的地方在慢慢松开，人变得愿意相信、愿意期待。不用刻意做什么，让这股气自己流一会儿。",
     "week_caution": "要注意的是想得太美：星星给的是方向，不是承诺。这周容易把「有希望」当成「已经成了」，把该做的事往后推。希望是用来走路的，不是用来躺的。",
     "week_action": "这周挑一件一直想做、一直没开始的小事，动手。哪怕只做一小步。星星的运气是给动起来的人的，坐着等，它只是一颗好看的星。",
@@ -1493,17 +1493,17 @@
    },
    "love": {
     "single": "关于这段感情，牌给的是一个温柔的「可以」。不管之前经历了什么，现在有真心，也有修复的可能。别急着要一个确定的答案，先把敞开的那扇门留着。",
-    "daily": "今天适合对 ta 温柔一点，也对自己温柔一点。有什么没说出口的好意，今天说出去会被接住。别翻旧账，今天的天气是晴的。",
-    "week_main": "这一周感情的主线是回暖。之前的疙瘩在松，两个人都愿意往对方那边挪一点。不用做大动作，日常里的小温柔就够了。",
+    "day": "今天适合对 ta 温柔一点，也对自己温柔一点。有什么没说出口的好意，今天说出去会被接住。别翻旧账，今天的天气是晴的。",
+    "week_main": "这一周感情的主线是回暖。之前的疙瘩在松，两个人都愿意往ta那边挪一点。不用做大动作，日常里的小温柔就够了。",
     "week_caution": "要注意的是把期待放得太高。刚回暖就要 ta 给承诺、给保证，容易把这点暖又压灭。这周允许感情只是「在变好」，不用立刻变成「已经好了」。",
     "week_action": "这周主动做一件让 ta 感到被在意的小事：一句话、一个安排、一个记得。不需要隆重，星星的光就是这么一点一点的。",
-    "past": "之前这段关系经历过一次修复：有过失望，但没有放弃，慢慢又相信了对方一次。那次和好留下的信任，是现在这段关系里最值钱的东西。",
+    "past": "之前这段关系经历过一次修复：有过失望，但没有放弃，慢慢又相信了ta一次。那次和好留下的信任，是现在这段关系里最值钱的东西。",
     "present": "眼下两个人之间是平和的、有希望的。也许还没到热烈，但那种「愿意继续」的感觉是真的。不用推，这个阶段自己会往前长。",
     "future": "往后看，这段感情会走向一种更安稳的状态：少一点试探，多一点信任。前提是现在别用力过猛，让它按自己的节奏长。"
    },
    "work": {
     "single": "这件事有希望，而且是那种踏实的希望：方向对，只是还需要时间。牌不保证一夜翻盘，它保证的是你走的这条路没有错。继续，别在快看见光的时候回头。",
-    "daily": "今天适合做有创造性的事：写方案、想点子、整理思路。灵感会比平时好找。不适合逼自己出成果，今天的产出在于想清楚，不在于交差。",
+    "day": "今天适合做有创造性的事：写方案、想点子、整理思路。灵感会比平时好找。不适合逼自己出成果，今天的产出在于想清楚，不在于交差。",
     "week_main": "这一周工作上的主线是重新找到感觉。前阵子的疲惫和迷茫在退，你会重新看见自己为什么做这件事。这是一个适合校准方向的星期。",
     "week_caution": "要注意的是眼高手低。灵感多的时候容易只想不做，或者把还没做的事当成已经做成的。这周别只跟人讲愿景，讲完得有一步落地。",
     "week_action": "这周把那个搁置很久的想法拿出来，写成一页纸的计划，然后做第一步。不用完美，先让它从脑子里出来。星星帮的是开始的人。",
@@ -1513,7 +1513,7 @@
    },
    "self": {
     "single": "关于你自己，牌说的是：你正在好起来。不是别人看出来的那种好，是你心里那盏灯又亮了的那种。相信它，哪怕现在还很微弱。",
-    "daily": "今天适合安静地照顾自己：晒晒太阳、喝够水、做一件只让自己开心的事。今天不用证明什么，你已经够了。",
+    "day": "今天适合安静地照顾自己：晒晒太阳、喝够水、做一件只让自己开心的事。今天不用证明什么，你已经够了。",
     "week_main": "这一周你的内在主题是「重新相信」。前阵子磨掉的那点信心在长回来，你会发现自己又敢想、敢要了。这是一个值得温柔对待的星期。",
     "week_caution": "要注意的是用力过猛：刚感觉好一点就想一口气把所有事补回来。愈合有它自己的速度，这周别催自己。",
     "week_action": "这周每天留十分钟给自己：不看手机，只是待着，或者写几行字。星星的疗愈需要一个安静的入口，这十分钟就是。",
@@ -1523,9 +1523,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "这件事眼下让你看不到希望，觉得白费了。牌不是说它没戏，是说你暂时看不见路。先别做决定，等这阵灰心过去，再看一次。",
-    "daily": "今天容易灰心，觉得做什么都没劲。别在这种时候下结论，也别逼自己振作。把该做的小事做了，剩下的让今天过去。",
+    "day": "今天容易灰心，觉得做什么都没劲。别在这种时候下结论，也别逼自己振作。把该做的小事做了，剩下的让今天过去。",
     "week_main": "这一周的底色有点暗：信心不足，做事提不起劲，看什么都觉得没盼头。这不是事实，是天气。云会散，别在阴天做晴天的决定。",
     "week_caution": "要注意的是自我否定的连锁反应：一件事不顺，就觉得全都不行。这周把「一件事」和「所有事」分开，别让一朵云遮掉整片天。",
     "week_action": "这周做一件确定能做成的小事，让自己重新体会「我可以」。不用大，够小、够具体就行。信心是一点一点攒回来的。",
@@ -1535,17 +1535,17 @@
    },
    "love": {
     "single": "关于这段感情，你现在是灰心的：觉得 ta 不够在意，或者觉得努力没有回应。牌说的是你暂时看不见光，不是光不在。别在最灰的时候做最重的决定。",
-    "daily": "今天容易对 ta 失望，容易觉得自己不被爱。今天别摊牌、别试探，你的判断被情绪罩着。等心情回来再说。",
-    "week_main": "这一周感情的主线是信心不足：对 ta、对这段关系、对自己值不值得都在怀疑。这种怀疑大半来自你的低落，不全来自对方。",
-    "week_caution": "要注意的是用冷淡试探对方。失望的时候容易缩回去，等 ta 来哄，结果两个人越离越远。这周别用退让去换证明。",
-    "week_action": "这周挑一个平静的时候，把你的失望说出来，不指责，只说感受。星星逆位要的不是对方变，是先把断掉的线重新接上。",
+    "day": "今天容易对 ta 失望，容易觉得自己不被爱。今天别摊牌、别试探，你的判断被情绪罩着。等心情回来再说。",
+    "week_main": "这一周感情的主线是信心不足：对 ta、对这段关系、对自己值不值得都在怀疑。这种怀疑大半来自你的低落，不全来自ta。",
+    "week_caution": "要注意的是用冷淡试探ta。失望的时候容易缩回去，等 ta 来哄，结果两个人越离越远。这周别用退让去换证明。",
+    "week_action": "这周挑一个平静的时候，把你的失望说出来，不指责，只说感受。星星逆位要的不是ta变，是先把断掉的线重新接上。",
     "past": "之前这段感情里有过一次失望：期待过什么，没有得到。那次的落空没有完全消化，它是你现在不敢全心相信的原因。",
     "present": "眼下两个人之间隔着一层灰心：还在一起，但少了盼头。不是没感情，是信心掉了。这个阶段先别谈将来，先把现在接住。",
     "future": "往后看，如果什么都不改，这段感情会往冷淡和疏离的方向滑。不是谁做错了什么，是希望一点点漏光了。想改变走向，得先有人把话说开。"
    },
    "work": {
     "single": "这件事让你觉得没希望：努力了没回报，或者方向看不清。牌说的是你现在信心不足，不是这件事一定不行。先把它放一放，别在灰心的时候做决定。",
-    "daily": "今天工作上容易觉得白费、没劲、看不到意义。别在今天评价自己，也别在今天放弃什么。把手头的事做完就是胜利。",
+    "day": "今天工作上容易觉得白费、没劲、看不到意义。别在今天评价自己，也别在今天放弃什么。把手头的事做完就是胜利。",
     "week_main": "这一周工作上的主线是失去方向感：不知道为什么做、做了有什么用。这是疲惫和失望叠出来的，不是能力问题。",
     "week_caution": "要注意的是在灰心的时候做大决定：辞职、放弃项目、跟人翻脸。这周所有重大决定都往后推一周，等看清了再说。",
     "week_action": "这周只做一件事：把手上最小、最确定的任务做好，完成一个算一个。别想大局，先让自己找回「做成事」的手感。",
@@ -1555,7 +1555,7 @@
    },
    "self": {
     "single": "关于你自己，牌说的是：你现在不相信自己了。不是你不行，是你暂时看不见自己的光。这种时候最不该听的就是自己心里那个「算了」的声音。",
-    "daily": "今天容易自我怀疑，容易觉得自己什么都做不好。今天别照镜子似的审自己，把注意力放在手上的事上，让这一天过去。",
+    "day": "今天容易自我怀疑，容易觉得自己什么都做不好。今天别照镜子似的审自己，把注意力放在手上的事上，让这一天过去。",
     "week_main": "这一周你的内在主题是信心塌了一块：怀疑自己、觉得没盼头、跟世界有点断了线。这是低潮，不是真相。",
     "week_caution": "要注意的是把自己关起来。低落的时候容易谁都不想见，越不见越沉。这周至少跟一个人说说话，哪怕不说心事。",
     "week_action": "这周每天写下一件今天做到的事，再小也写。星星逆位的解法不是等光来，是自己一点点把光找回来。",
@@ -1568,9 +1568,9 @@
  "major_18": {
   "_name": "月亮",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1580,7 +1580,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1590,7 +1590,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1600,7 +1600,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1610,9 +1610,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1622,7 +1622,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1632,7 +1632,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1642,7 +1642,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1655,9 +1655,9 @@
  "major_19": {
   "_name": "太阳",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1667,7 +1667,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1677,7 +1677,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1687,7 +1687,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1697,9 +1697,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1709,7 +1709,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1719,7 +1719,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1729,7 +1729,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1742,9 +1742,9 @@
  "major_20": {
   "_name": "审判",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1754,7 +1754,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1764,7 +1764,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1774,7 +1774,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1784,9 +1784,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1796,7 +1796,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1806,7 +1806,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1816,7 +1816,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1829,9 +1829,9 @@
  "major_21": {
   "_name": "世界",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1841,7 +1841,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1851,7 +1851,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1861,7 +1861,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1871,9 +1871,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1883,7 +1883,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1893,7 +1893,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1903,7 +1903,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",

@@ -2,9 +2,9 @@
  "wands_01": {
   "_name": "权杖一",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -14,7 +14,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -24,7 +24,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -34,7 +34,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -44,9 +44,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -56,7 +56,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -66,7 +66,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -76,7 +76,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -89,9 +89,9 @@
  "wands_02": {
   "_name": "权杖二",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -101,7 +101,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -111,7 +111,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -121,7 +121,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -131,9 +131,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -143,7 +143,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -153,7 +153,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -163,7 +163,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -176,9 +176,9 @@
  "wands_03": {
   "_name": "权杖三",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -188,7 +188,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -198,7 +198,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -208,7 +208,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -218,9 +218,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -230,7 +230,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -240,7 +240,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -250,7 +250,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -263,9 +263,9 @@
  "wands_04": {
   "_name": "权杖四",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -275,7 +275,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -285,7 +285,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -295,7 +295,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -305,9 +305,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -317,7 +317,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -327,7 +327,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -337,7 +337,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -350,9 +350,9 @@
  "wands_05": {
   "_name": "权杖五",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -362,7 +362,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -372,7 +372,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -382,7 +382,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -392,9 +392,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -404,7 +404,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -414,7 +414,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -424,7 +424,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -437,9 +437,9 @@
  "wands_06": {
   "_name": "权杖六",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -449,7 +449,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -459,7 +459,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -469,7 +469,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -479,9 +479,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -491,7 +491,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -501,7 +501,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -511,7 +511,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -524,9 +524,9 @@
  "wands_07": {
   "_name": "权杖七",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -536,7 +536,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -546,7 +546,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -556,7 +556,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -566,9 +566,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -578,7 +578,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -588,7 +588,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -598,7 +598,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -611,9 +611,9 @@
  "wands_08": {
   "_name": "权杖八",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -623,7 +623,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -633,7 +633,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -643,7 +643,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -653,9 +653,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -665,7 +665,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -675,7 +675,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -685,7 +685,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -698,9 +698,9 @@
  "wands_09": {
   "_name": "权杖九",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -710,7 +710,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -720,7 +720,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -730,7 +730,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -740,9 +740,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -752,7 +752,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -762,7 +762,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -772,7 +772,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -785,9 +785,9 @@
  "wands_10": {
   "_name": "权杖十",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -797,7 +797,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -807,7 +807,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -817,7 +817,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -827,9 +827,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -839,7 +839,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -849,7 +849,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -859,7 +859,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -872,9 +872,9 @@
  "wands_11": {
   "_name": "权杖侍从",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -884,7 +884,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -894,7 +894,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -904,7 +904,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -914,9 +914,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -926,7 +926,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -936,7 +936,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -946,7 +946,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -959,96 +959,96 @@
  "wands_12": {
   "_name": "权杖骑士",
   "up": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事要的是行动：别再琢磨了，冲。答案是「去做」，而且要快。风险是有的，但这张牌的运气正来自于敢动。",
+    "day": "今天有劲、有热情，适合出门、办事、把拖了很久的事一口气推掉。别把这股劲耗在犹豫上。",
+    "week_main": "这一周的核心是冲：热情高、行动快、说走就走。事情会因为你的主动而推进，这是一个属于行动派的星期。",
+    "week_caution": "要注意的是没看路：冲得太猛，忘了细节，或者把身边的人甩在后面。这周出发前多看一眼地图。",
+    "week_action": "这周挑一件一直想做、一直没动的事，直接开始。别做计划了，计划已经做够了，缺的是第一步。",
+    "past": "之前有过一段你冲得很快的日子：热情、果断、说干就干。那股劲推动了很多事，也可能留下一些没收拾的尾巴。",
+    "present": "眼下你在冲刺：热情高，行动快，不太想停。这个阶段效率很高，也最容易顾头不顾尾。留一点注意力给脚下。",
+    "future": "照现在这样走，前面是一段快节奏的、有进展的日子。事情会动起来，也会有些颠簸。系好安全带。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情里有一股热烈的推力：有人在主动、在追、在表白。答案偏向「会有进展」，而且快。只是热得快的也要看能不能持久。",
+    "day": "今天感情上适合主动：约 ta、说出来、做点冲动但真心的事。今天的热情是真的，ta 会感觉到。",
+    "week_main": "这一周感情的主线是热烈：追求、表白、突然的邀约，节奏很快。享受它，但别在这周做一辈子的决定。",
+    "week_caution": "要注意的是冲动：一时热血说了重话、许了做不到的诺，或者把 ta 吓到。这周热情可以，承诺先别急。",
+    "week_action": "这周为 ta 做一件冲动的小事：一个临时的约、一个突然的礼物、一句没想太多的喜欢。骑士的浪漫就是不计划。",
+    "past": "之前这段感情有过一段热烈的开头：有人冲上来，快、热、不管不顾。那段激情是现在这段关系的起点，也定下了它的节奏。",
+    "present": "眼下这段感情在热头上：有人在冲，节奏快，情绪高。这个阶段很好，但别只靠冲，热情之外也要有一点稳。",
+    "future": "往后看，这段感情会有一段热烈的推进，可能很快就到下一个阶段。只是骑士的热情来得快，能不能持久，看后面有没有人接。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事要靠冲劲拿下：主动出击、快速推进、别等条件齐全。答案是「上」，但上了之后要有人收尾。",
+    "day": "今天工作上适合攻坚、出差、推进拖了很久的事。你今天有劲，把它用在最难啃的那块上。",
+    "week_main": "这一周工作的主线是行动：新项目、新提案、新方向，都在往前冲。你会是推动的那个人，节奏会很快。",
+    "week_caution": "要注意的是虎头蛇尾：开头猛，中间散，最后没人收。这周开的每一件事，都想好谁来收尾。",
+    "week_action": "这周把那个想了很久的提案或行动直接推出去。不完美也推，骑士的机会属于先动的人。",
+    "past": "之前工作上有过一段你冲得很猛的时期：主动、果断、推动了不少事。那股劲是你的名片，也可能留下过没收拾的摊子。",
+    "present": "眼下工作上你在冲：项目在推进、节奏在加快、你是那个带头的。这个阶段效率高，但记得回头看有没有人跟上。",
+    "future": "照现在的走法，工作上会进入一段快速推进期：有进展、有动静、也有颠簸。守住方向，别因为快而跑偏。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你现在充满行动力，想动、想冲、想改变。这股劲是好的，只要别让它变成不管不顾。",
+    "day": "今天你有劲，适合去做那件一直想做的事。别把它耗在刷手机上，出门，动起来。",
+    "week_main": "这一周你的内在主题是「动」：坐不住，想改变，想出发。这股冲劲是你的能量在回来，顺着它，但记得看路。",
+    "week_caution": "要注意的是急躁：等不及、不耐烦、跟人说话冲。这周热情用在事上，别用在人身上。",
+    "week_action": "这周做一件需要勇气的小事：说一句一直没说的话，去一个一直没去的地方。骑士的功课是把冲劲变成行动。",
+    "past": "之前你有过一段热血的日子：冲动、勇敢、不管不顾。那段经历让你知道自己有多大的劲，也知道了冲过头的代价。",
+    "present": "眼下你处在一个能量很高的阶段：想动、想冲、坐不住。这是好状态，只是别让它烧得太快，留一点给下周。",
+    "future": "往后看，你会进入一段行动力很强的时期：敢做、敢要、敢改变。前提是别把所有的热情一次烧完。"
    }
   },
   "rev": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事冲得太猛了，或者根本没冲对方向：鲁莽、急躁、半途而废。答案是「先停一下」，看清楚再动。",
+    "day": "今天容易急躁、出错、跟人起冲突。开车慢点，说话慢点，别在今天做冲动的决定。",
+    "week_main": "这一周的底色是急：等不及、耐不住、做一半就想换。热情还在，但用错了地方，容易撞车。",
+    "week_caution": "要注意的是三分钟热度：这周开的头，很可能下周就凉了。开始之前先问自己能不能坚持到底。",
+    "week_action": "这周把一件已经开了头的事做完，再开新的。骑士逆位的解法不是更多的冲，是把冲劲收回来用在一件事上。",
+    "past": "之前有过一段冲过头的日子：急、莽、说走就走，也可能留下了没收拾的烂摊子。那些尾巴到现在还在影响你。",
+    "present": "眼下你在失控的边缘：急、躁、想冲又冲不对方向。这个阶段最该做的是踩刹车，不是踩油门。",
+    "future": "照现在这样走，前面会有一段颠簸：冲动的决定、半途而废的事、跟人的摩擦。转机在于哪天你肯慢下来。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情里有人太急了：冲动表白、冲动分手、冲动复合，或者热情来得快去得也快。答案是「慢一点」，别用冲动做决定。",
+    "day": "今天感情上容易冲动：说重话、发脾气、一时上头做决定。今天什么都别定，睡一觉再说。",
+    "week_main": "这一周感情的主线是急躁：等不及 ta 的回应、耐不住关系的节奏、动不动想摊牌。热情变成了压力。",
+    "week_caution": "要注意的是把热情变成逼迫：ta 没跟上你的速度，你就急，一急就冲。这周给 ta 一点跟上来的时间。",
+    "week_action": "这周忍住一次冲动：一句想脱口而出的重话、一个想立刻做的决定。忍住了，这段关系就多一分稳。",
+    "past": "之前这段感情有过冲动的阶段：来得快、烧得猛，也可能因为急而伤过人。那些冲动留下的痕迹，是现在两个人之间的小心翼翼。",
+    "present": "眼下这段感情有点失控：有人太急，有人在躲，节奏对不上。这个阶段别追，追得越紧，ta 退得越快。",
+    "future": "往后看，如果继续这么急，这段感情会在冲动里耗掉：热得快，凉得也快。转机在于有人肯把速度降下来。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事冲得太急，或者冲错了方向：准备不足就上，或者上了一半就散。答案是「先停，看清楚再动」，硬冲只会撞车。",
+    "day": "今天工作上容易急躁、出错、跟人冲突。复杂的事今天别碰，做点简单确定的。",
+    "week_main": "这一周工作的主线是失控的冲劲：想快，但方向乱，力气使不到点上。开了头的事容易半途而废。",
+    "week_caution": "要注意的是傲慢：觉得自己什么都能、不听人的、冲上去就干。这周做决定之前，听一个反对的声音。",
+    "week_action": "这周不开新项目，把手上没做完的收一收。骑士逆位的功课是收尾，不是开头。",
+    "past": "之前工作上有过冲过头的经历：仓促上马、半途而废，或者跟人起了冲突。那次的教训是你现在做事犹豫的原因之一。",
+    "present": "眼下工作上的状态是急而乱：想推进又推不动，越急越错。这个阶段先别加速，先把方向对准。",
+    "future": "照现在的走法，工作上会有一段颠簸期：冲动的决定、没收尾的事、跟人的摩擦。守住一件事做到底，就是这段时间的胜利。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你现在太急了。想要的东西恨不得立刻到手，做的事恨不得立刻见效。这份急正在消耗你。",
+    "day": "今天容易烦躁、坐不住、对人不耐烦。今天别做重要决定，出去走一走，把火散掉。",
+    "week_main": "这一周你的内在主题是「急」：等不及、坐不住、什么都想快。这股躁动是能量在乱窜，需要一个出口，不是一个目标。",
+    "week_caution": "要注意的是把急躁发泄在人身上。这周你的火气容易伤到身边的人，说话之前多等三秒。",
+    "week_action": "这周每天做一件慢的事：走路、做饭、写字，什么都行，只要慢。骑士逆位的解法是让身体先慢下来。",
+    "past": "之前你有过一段冲动的日子：急、莽、说做就做，也为此付出过代价。那段经历让你现在既想冲又怕冲。",
+    "present": "眼下你处在一个躁动的阶段：能量高但方向乱，容易冲动也容易半途而废。这个阶段不适合做大决定。",
+    "future": "往后看，如果一直这么急，会在冲动和后悔之间来回耗。转机在于你什么时候肯让自己慢下来，哪怕只是一天。"
    }
   }
  },
  "wands_13": {
   "_name": "权杖王后",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1058,7 +1058,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1068,7 +1068,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1078,7 +1078,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1088,9 +1088,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1100,7 +1100,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1110,7 +1110,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1120,7 +1120,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1133,9 +1133,9 @@
  "wands_14": {
   "_name": "权杖国王",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1145,7 +1145,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1155,7 +1155,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1165,7 +1165,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1175,9 +1175,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1187,7 +1187,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1197,7 +1197,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1207,7 +1207,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",

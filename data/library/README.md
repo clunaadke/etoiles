@@ -1,6 +1,6 @@
 # 固定解牌库
 
-按「牌名 + 正逆位 + 主题 + 牌位」读一段。一共 5772 格，空字符串 = 还没写；没写的格页面会自动退回老表（`js/data/text.js`，按主题一段 + 按牌位换时态），所以可以一格一格慢慢填，填一格生效一格。
+按「牌名 + 正逆位 + 主题 + 牌位」读一段。一共 5772 格，空字符串 = 还没写。开发期没写的格页面显示「【开发期缺失】牌名 正逆 · 主题 · 牌位」，并记进 `missingLog()`，5772 格全写完之前不正式开放。
 
 ## 普通牌位（4992 格）
 
@@ -10,7 +10,7 @@
 {
   "major_00": {
     "_name": "愚人",                ← 只是给人看的，程序不读
-    "up":  { "daily": { "single": "", "daily": "", "week_main": "", "week_caution": "", "week_action": "", "past": "", "present": "", "future": "" },
+    "up":  { "life": { "single": "", "day": "", "week_main": "", "week_caution": "", "week_action": "", "past": "", "present": "", "future": "" },
              "love":  { ...同上八个牌位... },
              "work":  { ... },
              "self":  { ... } },
@@ -21,8 +21,8 @@
 ```
 
 - 正逆位：`up` 正位 / `rev` 逆位
-- 主题：`daily` 日常 / `love` 感情 / `work` 事业 / `self` 自我
-- 牌位：`single` 单张 / `daily` 每日 / `week_main` 本周主线 / `week_caution` 需要注意 / `week_action` 行动建议 / `past` 过去 / `present` 现在 / `future` 未来
+- 主题：`life` 日常 / `love` 感情 / `work` 事业 / `self` 自我
+- 牌位：`single` 单张 / `day` 每日 / `week_main` 本周主线 / `week_caution` 需要注意 / `week_action` 行动建议 / `past` 过去 / `present` 现在 / `future` 未来
 
 78 × 2 × 4 × 8 = 4992。
 
@@ -41,13 +41,13 @@
 }
 ```
 
-- 牌位：`me` 我 / `him` 他 / `between` 我们之间 / `block` 阻碍 / `toward` 走向
+- 牌位：`me` 我 / `him` ta / `between` 我们之间 / `block` 阻碍 / `toward` 走向
 
 78 × 2 × 5 = 780。
 
 ## 牌阵怎么对到牌位
 
-- 单张牌阵：问题是「每日一牌」→ `daily`；别的问题 → `single`
+- 单张牌阵：问题是「每日一牌」→ `day`；别的问题 → `single`
 - 三张牌阵：`past` / `present` / `future`
 - 本周牌阵：三张，本周主线 → `week_main`（这一周的核心状态），需要注意 → `week_caution`（可能遇到的阻碍或风险），行动建议 → `week_action`（这一周适合怎么做）
 - 关系牌阵：`me` / `him` / `between` / `block` / `toward`
@@ -69,4 +69,5 @@ node cli/library.mjs todo 50    列 50 个还没写的格
 - 本周三个位各管各的：主线说状态，需要注意说阻碍和风险，行动建议说怎么做。
 - 主题词不要越界：感情格不谈工作，事业格不谈恋爱。
 - 不认识提问者，不猜背景，不鸡汤。
-- 改完跑一遍 `check`，JSON 写坏了页面会整段退回老表。
+- 第二人称写「你」，另一半一律写小写「ta」，不写「他 / 她 / 对方」。
+- 改完跑一遍 `check`，JSON 写坏了整个文件都读不进去。

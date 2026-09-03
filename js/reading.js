@@ -7,9 +7,9 @@
 
 import { CARD_BY_ID, SPREADS } from './data/deck.js';
 import { CARD_TEXT } from './data/text.js';
-import { lookup, lookupRelation, positionKey, isRelationSpread } from './library.js';
+import { lookup, lookupRelation, positionKey, isRelationSpread, missingNotice } from './library.js';
 
-export const CATEGORIES = { love: '感情', work: '事业', self: '自我', daily: '日常' };
+export const CATEGORIES = { love: '感情', work: '事业', self: '自我', life: '日常' };
 
 const LOVE = /他|她|喜欢|爱|恋|关系|在一起|分手|暧昧|想我|吵架|表白|复合|老公|老婆|男朋友|女朋友|伴侣|婚|我们|我俩|两个人|感情|对象|想念|见面|亲/;
 const WORK = /工作|事业|项目|老板|同事|考试|学习|钱|收入|面试|上线|升职|离职|生意|投资|赚|合作|作业|论文|课/;
@@ -21,11 +21,11 @@ export const WEEKLY_QUESTION = '本周运势';
 export function detectCategory(question, explicit) {
   if (explicit && explicit in CATEGORIES) return explicit;
   const q = (question || '').trim();
-  if (!q || q === DAILY_QUESTION || q === WEEKLY_QUESTION) return 'daily';
+  if (!q || q === DAILY_QUESTION || q === WEEKLY_QUESTION) return 'life';
   if (LOVE.test(q)) return 'love';
   if (WORK.test(q)) return 'work';
   if (SELF.test(q)) return 'self';
-  return 'daily';
+  return 'life';
 }
 
 // 牌位前缀：这张牌落在这个位置上，先说这个位置在问什么
@@ -37,8 +37,8 @@ export const POSITION_INTRO = {
   axis: '本周主线是这一周的核心状态，其他事都会被它染上颜色。',
   gentle: '需要注意位说的是这周可能遇到的阻碍或风险，先看见，就不会被绊倒。',
   action: '行动建议位说的是这周适合怎么做，是动作，不是心情。',
-  me: '「我」位是提问者自己在这段关系里的状态和姿态，不是对方眼里的你，是牌看见的你。',
-  him: '「他」位是对方此刻的状态和态度。牌只描述他的位置，不替他表态。',
+  me: '「我」位是提问者自己在这段关系里的状态和姿态，不是 ta 眼里的你，是牌看见的你。',
+  him: '「ta」位是 ta 此刻的状态和态度。牌只描述 ta 的位置，不替 ta 表态。',
   between: '「我们之间」说的是两个人中间那股力：关系本身的质地，不属于任何一方。',
   block: '「阻碍」位点出卡住这件事的东西。逆位在这里反而常常说明阻力正在松。',
   toward: '「走向」是这段关系照现在的样子往前走的方向，是趋势，不是结局。',
@@ -57,7 +57,7 @@ const ELEMENT = { wands: 'fire', cups: 'water', swords: 'air', pents: 'earth' };
 function entry(cid, rev, cat) {
   const e = CARD_TEXT[cid] || {};
   const side = e[rev ? 'rev' : 'up'] || {};
-  return [side[cat] || side.daily || '', side.advice || ''];
+  return [side[cat] || side.life || '', side.advice || ''];
 }
 
 // 时态（0903 她抓的：日常那套文案全是「今天……」，落在过去 / 未来 / 本周 / 关系位上就不对）。
@@ -183,8 +183,9 @@ export function oneline(cards, category, question, spreadId) {
   let key = cards.find((c) => suitOf(c.id) === 'major') || cards[cards.length - 1];
   const libKey = positionKey(spreadId || (cards.length > 1 ? 'three' : 'one'), key.position, question);
   const fromLib = isRelationSpread(spreadId) ? lookupRelation(key.id, key.reversed, libKey) : lookup(key.id, key.reversed, category, libKey);
-  const [raw] = entry(key.id, key.reversed, category);
-  const text = fromLib || tense(raw, cards.length > 1 ? key.position : 'answer', question);
+  const name0 = (CARD_BY_ID[key.id] || {}).name || key.id;
+  if (!fromLib) return `${name0}${key.reversed ? '逆位' : '正位'}定调：（这一格固定牌义还没写）`;
+  const text = fromLib;
   const first = text.split(/[。！？]/, 1)[0];
   const name = (CARD_BY_ID[key.id] || {}).name || key.id;
   return `${name}${key.reversed ? '逆位' : '正位'}定调：${first}。`;
@@ -208,10 +209,10 @@ export function build(reading, category) {
     const card = CARD_BY_ID[cid] || {};
     const [rawText, rawAdvice] = entry(cid, rev, cat);
     const pos = sp.positions.length > 1 ? (c.position || '') : 'answer';
-    // 先查固定解牌库（牌名 + 正逆 + 主题 + 牌位；关系牌阵不叠主题），那格没写再退老表 + 时态替换
+    // 查固定解牌库（牌名 + 正逆 + 主题 + 牌位；关系牌阵不叠主题）。开发期没写的格不退老表，显示缺失提示并记下
     const libKey = positionKey(sp.id, c.position, reading.question);
     const fromLib = isRelationSpread(sp.id) ? lookupRelation(cid, rev, libKey) : lookup(cid, rev, cat, libKey);
-    const text = fromLib || tense(rawText, pos, reading.question);
+    const text = fromLib || missingNotice({ cardId: cid, cardName: card.name || cid, reversed: rev, theme: isRelationSpread(sp.id) ? null : cat, position: libKey });
     const advice = pos === 'past' ? '' : tense(rawAdvice, pos, reading.question);
     const intro = sp.positions.length > 1 ? (POSITION_INTRO[c.position || ''] || '') : POSITION_INTRO.answer;
     const suit = suitOf(cid);
@@ -220,7 +221,7 @@ export function build(reading, category) {
     outCards.push({
       id: cid, name: card.name || cid, reversed: rev,
       position: c.position || '', position_name: posname[c.position || ''] || '',
-      intro, nature, text, advice, source: fromLib ? 'library' : 'fallback',
+      intro, nature, text, advice, source: fromLib ? 'library' : 'missing',
       keywords: card[rev ? 'keywordsRev' : 'keywordsUp'] || [],
     });
     if (advice) advices.push(advice);

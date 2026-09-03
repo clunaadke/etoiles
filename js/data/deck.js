@@ -1939,7 +1939,7 @@ export const SPREADS = [
  {
   "id": "relation",
   "name": "关系",
-  "hint": "我 · 他 · 我们之间 · 阻碍 · 走向",
+  "hint": "我 · ta · 我们之间 · 阻碍 · 走向",
   "positions": [
    {
     "key": "me",
@@ -1947,7 +1947,7 @@ export const SPREADS = [
    },
    {
     "key": "him",
-    "name": "他"
+    "name": "ta"
    },
    {
     "key": "between",

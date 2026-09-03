@@ -2,9 +2,9 @@
  "cups_01": {
   "_name": "圣杯一",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -14,7 +14,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -24,7 +24,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -34,7 +34,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -44,9 +44,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -56,7 +56,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -66,7 +66,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -76,7 +76,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -89,9 +89,9 @@
  "cups_02": {
   "_name": "圣杯二",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -101,7 +101,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -111,7 +111,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -121,7 +121,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -131,9 +131,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -143,7 +143,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -153,7 +153,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -163,7 +163,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -176,9 +176,9 @@
  "cups_03": {
   "_name": "圣杯三",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -188,7 +188,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -198,7 +198,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -208,7 +208,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -218,9 +218,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -230,7 +230,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -240,7 +240,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -250,7 +250,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -263,9 +263,9 @@
  "cups_04": {
   "_name": "圣杯四",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -275,7 +275,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -285,7 +285,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -295,7 +295,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -305,9 +305,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -317,7 +317,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -327,7 +327,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -337,7 +337,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -350,96 +350,96 @@
  "cups_05": {
   "_name": "圣杯五",
   "up": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事里有失去，而且你还在看着倒掉的那几杯。答案是「转过身」：丢了的是真的，但没全丢，身后还站着两杯。",
+    "day": "今天容易沉在一件不顺心的事里出不来。允许自己难过一会儿，然后看一眼手里还有什么。",
+    "week_main": "这一周的底色是失落：有件事没成，或者有样东西丢了，你会反复回头看。悲伤是正常的，但别一周都站在那儿。",
+    "week_caution": "要注意的是只看倒掉的：为丢了的那三杯难过，忘了身后还有两杯。这周每天数一件还在的东西。",
+    "week_action": "这周为那件失去的事正式地难过一次，然后做一件小事把注意力挪开。不是忘掉，是转身。",
+    "past": "之前有过一次失去：一件事没成，或者一样珍惜的东西丢了。那次的难过没有完全过去，它是现在这件事的背景色。",
+    "present": "眼下你正站在失落里：看着没了的那部分，还没转过身来。这个阶段不用强迫自己振作，但也别一直背对着还剩下的。",
+    "future": "照现在这样走，前面会有一段需要消化的失落。它会过去，但需要你愿意转身，看见身后那两杯还满着的。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情里有失望和后悔：有什么东西倒掉了，你还在看着它。答案不是「完了」，是「没全完」。身后还有两杯，看一眼。",
+    "day": "今天感情上容易难过、翻旧账、想起 ta 让你失望的地方。今天别在这种心情里跟 ta 说话，先陪自己一会儿。",
+    "week_main": "这一周感情的主线是失落：为一件没得到的东西难过，或者为一句伤人的话反复回想。给悲伤留位置，但别让它占满。",
+    "week_caution": "要注意的是沉在失望里出不来，忘了 ta 还在、这段关系还在。这周别只看倒掉的三杯，也看看还站着的两杯。",
+    "week_action": "这周把心里那件失望的事跟 ta 说一次，不带指责，只说「我难过」。说出来，倒掉的杯子才不会一直立在那儿。",
+    "past": "之前这段感情里有过一次失落：一次失望、一次伤心、一件没能实现的期待。那次的难过没完全消化，它在影响你现在对 ta 的信任。",
+    "present": "眼下这段感情里有一层悲伤：有什么东西没了，两个人都还没转过身。这个阶段先别急着修复，先允许难过，难过完了才好谈。",
+    "future": "往后看，这段感情要经过一段消化失落的时间。它不一定是结束，看两个人愿不愿意一起转身看还剩下什么。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事里有损失，可能是一次没成的机会、一份没有回报的投入。答案是「接受损失，看剩下的」：没全输，还有底牌。",
+    "day": "今天工作上容易为一件没成的事沮丧，反复想哪里做错了。复盘可以，但别在今天做决定。",
+    "week_main": "这一周工作的主线是消化损失：一个项目黄了，一次努力白费，或者一个机会溜了。允许自己失落，但别把整周都耗在回头看。",
+    "week_caution": "要注意的是被一次失败拖住：因为一件事没成，就觉得全盘皆输，什么都不想做。这周把损失和全局分开。",
+    "week_action": "这周把那件失败的事写一页复盘：丢了什么、留下什么、学到什么。写完就翻页，去做还站着的那两杯。",
+    "past": "之前工作上有过一次损失：一个项目失败，一次投入打了水漂。那次的挫败到现在还在影响你对风险的判断。",
+    "present": "眼下工作上你在消化一次损失：还在看着没成的那件事，提不起劲开新的。这个阶段适合复盘和收拾，不适合大动作。",
+    "future": "照现在的走法，工作上会有一段低落的过渡期：为失去的惋惜，慢慢才找回状态。转身越早，这段时间越短。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你还在为失去的东西难过，背对着还拥有的。这份悲伤是真的，但它不是全部。",
+    "day": "今天容易情绪低落、想起过去的遗憾。今天不用强迫自己开心，但做一件让身体舒服的事。",
+    "week_main": "这一周你的内在主题是「哀悼」：为一件失去的事、一个没实现的自己难过。这是必要的过程，别跳过它，也别住在里面。",
+    "week_caution": "要注意的是把自己泡在悲伤里：反复回想、反复后悔，越想越沉。这周每天给悲伤一段时间，时间到了就起身。",
+    "week_action": "这周写下你失去的和还拥有的，各列一栏。写完看一眼右边那栏，圣杯五的功课就是这一眼。",
+    "past": "之前你经历过一次失去：一段关系、一个机会、一个版本的自己。那次的悲伤留下了痕迹，你现在的敏感和小心是从那儿来的。",
+    "present": "眼下你处在失落里：还在看着没了的那部分，提不起劲看别的。这个阶段允许自己难过，难过是恢复的第一步。",
+    "future": "往后看，你会慢慢从这份失落里走出来，不是忘掉，是能带着它往前走。转身的那一刻，会比你想的来得早。"
    }
   },
   "rev": {
-   "daily": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+   "life": {
+    "single": "这件事里的失落在退潮：你开始接受丢了的，也开始看见还留着的。答案是「可以往前走了」，悲伤还在，但不再挡路。",
+    "day": "今天心情在回暖：之前压着的事没那么沉了，能看见一点亮。适合收拾、整理、把之前搁下的捡起来。",
+    "week_main": "这一周的核心是走出来：从一件失落的事里慢慢抬头，重新注意到手里还有什么。不快，但方向是对的。",
+    "week_caution": "要注意的是假装没事：明明还难过，硬说自己已经放下了。这周允许悲伤偶尔回来，回来了不代表倒退。",
+    "week_action": "这周做一件之前因为难过而搁置的事。不用大，把它捡起来就是在告诉自己：我可以往前走了。",
+    "past": "之前有过一段从失落里慢慢走出来的日子：接受了丢掉的，转身看见了留下的。那次的释怀是你现在能扛事的底子。",
+    "present": "眼下你正在从失落里抬头：还有点难过，但已经能看见别的东西了。这个阶段是恢复期，顺着它，别催。",
+    "future": "照现在这样走，前面是一段慢慢回暖的日子：失落退去，重新有了盼头。你会带着那点遗憾往前走，而且走得动。"
    },
    "love": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这段感情里的失望在消化：你开始接受那次的伤，也开始重新看见 ta 的好。答案是「可以再试一次」，只是慢一点。",
+    "day": "今天感情上心情在回暖：之前的难过没那么重了，愿意跟 ta 好好说话了。今天适合和解，不适合翻旧账。",
+    "week_main": "这一周感情的主线是释怀：一件一直搁在心里的失望在松，两个人都愿意往前看一点。这是修复的窗口。",
+    "week_caution": "要注意的是太快地说「我没事了」：伤还没好全就装作放下，下次一碰又疼。这周允许自己还有一点难过。",
+    "week_action": "这周跟 ta 一起做一件新的小事：不提过去，只是一起做点什么。释怀不是靠说的，是靠一起往前走出来的。",
+    "past": "之前这段感情经历过一次失望之后的和解：难过过，然后慢慢原谅了。那次的释怀是这段关系韧性的来源。",
+    "present": "眼下这段感情在从失落里恢复：还有点小心翼翼，但两个人都愿意往前看了。这个阶段别急着要「完全好」，慢慢来。",
+    "future": "往后看，这段感情会走出那次失望，进入一段更平和的时期。前提是不要假装那次没发生过，而是带着它一起往前走。"
    },
    "work": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "这件事里的损失在过去：你开始接受那次失败，也开始看见还剩下的资源。答案是「可以重新开始」，带着教训，不带包袱。",
+    "day": "今天工作上状态在回来：之前那件失败的事没那么压人了，能重新想「接下来」。适合规划，不适合大动作。",
+    "week_main": "这一周工作的主线是重新出发：从一次损失里抬起头，把剩下的资源重新盘一遍。这是复盘之后的第一步。",
+    "week_caution": "要注意的是好了伤疤忘了疼：刚缓过来就想在同一个地方再赌一次。这周回头看一眼复盘，再决定。",
+    "week_action": "这周把那次失败里学到的一条写成自己的规矩，然后用在下一件事上。损失只有变成规矩才不算白付。",
+    "past": "之前工作上有过一次从失败里爬起来的经历：接受了损失，调整了方向，重新开始。那次的经验是你现在的底气。",
+    "present": "眼下工作上你在从一次损失里恢复：状态在回来，开始有力气想下一步了。这个阶段适合重新规划，不适合冒进。",
+    "future": "照现在的走法，工作上会进入一段重建期：从损失里恢复，慢慢找回节奏。不快，但每一步都比之前踏实。"
    },
    "self": {
-    "single": "",
-    "daily": "",
-    "week_main": "",
-    "week_caution": "",
-    "week_action": "",
-    "past": "",
-    "present": "",
-    "future": ""
+    "single": "关于你自己，牌说的是：你正在从一份悲伤里走出来。不是忘了，是能带着它往前走了。这是真正的恢复。",
+    "day": "今天心情在回暖：之前压着的那件事松了一点。适合照顾自己，做点让身体舒服的事。",
+    "week_main": "这一周你的内在主题是「转身」：从失去的东西上移开目光，重新看见自己还拥有什么。这是一个温柔的星期。",
+    "week_caution": "要注意的是对自己太急：刚好一点就要求自己完全好。悲伤退潮有它自己的速度，这周允许它偶尔回来。",
+    "week_action": "这周每天记下一件今天让你感到「还好」的小事。圣杯五逆位的解法是一点一点把注意力从倒掉的杯子挪到站着的杯子上。",
+    "past": "之前你经历过一次从悲伤里走出来的过程：难过过、接受了、慢慢释怀。那次的经验是你现在的韧性，你知道自己能过去。",
+    "present": "眼下你处在恢复期：悲伤在退，力气在回来，开始愿意看向前面了。这个阶段别催自己，也别怀疑自己是不是真的好了。",
+    "future": "往后看，你会走出这份失落，带着它、但不被它困住。你会发现自己比想象中更能承受失去，也更能重新开始。"
    }
   }
  },
  "cups_06": {
   "_name": "圣杯六",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -449,7 +449,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -459,7 +459,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -469,7 +469,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -479,9 +479,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -491,7 +491,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -501,7 +501,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -511,7 +511,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -524,9 +524,9 @@
  "cups_07": {
   "_name": "圣杯七",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -536,7 +536,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -546,7 +546,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -556,7 +556,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -566,9 +566,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -578,7 +578,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -588,7 +588,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -598,7 +598,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -611,9 +611,9 @@
  "cups_08": {
   "_name": "圣杯八",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -623,7 +623,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -633,7 +633,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -643,7 +643,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -653,9 +653,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -665,7 +665,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -675,7 +675,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -685,7 +685,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -698,9 +698,9 @@
  "cups_09": {
   "_name": "圣杯九",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -710,7 +710,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -720,7 +720,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -730,7 +730,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -740,9 +740,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -752,7 +752,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -762,7 +762,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -772,7 +772,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -785,9 +785,9 @@
  "cups_10": {
   "_name": "圣杯十",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -797,7 +797,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -807,7 +807,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -817,7 +817,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -827,9 +827,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -839,7 +839,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -849,7 +849,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -859,7 +859,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -872,9 +872,9 @@
  "cups_11": {
   "_name": "圣杯侍从",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -884,7 +884,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -894,7 +894,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -904,7 +904,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -914,9 +914,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -926,7 +926,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -936,7 +936,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -946,7 +946,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -959,9 +959,9 @@
  "cups_12": {
   "_name": "圣杯骑士",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -971,7 +971,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -981,7 +981,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -991,7 +991,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1001,9 +1001,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1013,7 +1013,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1023,7 +1023,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1033,7 +1033,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1046,9 +1046,9 @@
  "cups_13": {
   "_name": "圣杯王后",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1058,7 +1058,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1068,7 +1068,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1078,7 +1078,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1088,9 +1088,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1100,7 +1100,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1110,7 +1110,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1120,7 +1120,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1133,9 +1133,9 @@
  "cups_14": {
   "_name": "圣杯国王",
   "up": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1145,7 +1145,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1155,7 +1155,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1165,7 +1165,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1175,9 +1175,9 @@
    }
   },
   "rev": {
-   "daily": {
+   "life": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1187,7 +1187,7 @@
    },
    "love": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1197,7 +1197,7 @@
    },
    "work": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",
@@ -1207,7 +1207,7 @@
    },
    "self": {
     "single": "",
-    "daily": "",
+    "day": "",
     "week_main": "",
     "week_caution": "",
     "week_action": "",

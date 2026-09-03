@@ -1,7 +1,7 @@
 // 聊天卡零件：<tarot-card>。一段卡片数据 → 画出带边框的塔罗卡，塞进任何聊天页。
 // 两种：
 //   · 亮牌面的（[TAROT_CARD]{…}）：抽好了，展示牌 + 关键词 + 客观解读（默认只露一句话，点「逐牌」展开）
-//   · 能抽的（[TAROT_OFFER]{…}）：对方出了题，在卡里滑牌带一张张抽；抽满自动变成亮牌面的
+//   · 能抽的（[TAROT_OFFER]{…}）：ta 出了题，在卡里滑牌带一张张抽；抽满自动变成亮牌面的
 // 用法：
 //   <script type="module" src="js/tarot-card.js"></script>
 //   <tarot-card data='{"id":…}' asset-base="./"></tarot-card>          直接给 JSON
@@ -174,7 +174,7 @@ export class TarotCardElement extends HTMLElement {
     const head = h('div', 'head');
     head.innerHTML = SPARK;
     if (isOffer) head.append(h('span', null, done ? '出的题，抽好了' : '出了题，你来抽'), h('span', 'sp', `· ${d.spread_name || sp.name}`));
-    else head.append(h('span', null, d.by === 'him' ? '对方抽了牌' : '抽了牌'), h('span', 'sp', `· ${d.spread_name || sp.name}`), h('span', 't', timeText(d.ts)));
+    else head.append(h('span', null, d.by === 'him' ? 'ta 抽了牌' : '抽了牌'), h('span', 'sp', `· ${d.spread_name || sp.name}`), h('span', 't', timeText(d.ts)));
     body.append(head);
     if (d.question) body.append(h('div', 'q', `「${d.question}」`));
     if (done) {

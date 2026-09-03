@@ -41,6 +41,6 @@ node cli/tarot.mjs read '[TAROT_CARD]{…}[/TAROT_CARD]'
 - 单张：一句话问，一张牌答
 - 三张：过去 · 现在 · 未来
 - 本周：本周主线 · 需要注意 · 行动建议
-- 关系：我 · 他 · 我们之间 · 阻碍 · 走向
+- 关系：我 · ta · 我们之间 · 阻碍 · 走向
 
 `node cli/tarot.mjs deck` 列 78 张牌和关键词。
