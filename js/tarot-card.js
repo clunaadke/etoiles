@@ -16,6 +16,7 @@ import { CARDS, CARD_BY_ID } from './data/deck.js';
 import { build, spreadOf } from './reading.js';
 import { cardFace, cardBack, setAssetBase } from './cards.js';
 import { DeckBand } from './band.js';
+import { loadLibrary, libraryLoaded } from './library.js';
 
 const STYLE = `
 :host { display: block; --ink: #33294d; --dim: rgba(51,41,77,.62); --accent: #704ca8; --sub: rgba(255,255,255,.32);
@@ -140,7 +141,10 @@ export class TarotCardElement extends HTMLElement {
     this._data = null; this._band = null; this._sel = 0;
     this._drawn = []; this._chosen = null; this._busy = false; this._deck = [];
   }
-  connectedCallback() { this.render(); }
+  connectedCallback() {
+    this.render();
+    if (!libraryLoaded()) loadLibrary(this.assetBase).then(() => this.isConnected && this.render());
+  }
   disconnectedCallback() { if (this._band) { this._band.destroy(); this._band = null; } }
   attributeChangedCallback(name, _o, v) {
     if (name === 'data') { try { this._data = JSON.parse(v); } catch { this._data = null; } }

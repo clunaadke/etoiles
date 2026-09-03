@@ -11,6 +11,7 @@ import { DeckBand } from './band.js';
 import { loadAI, saveAI, aiReady, readerLabel, homeLabel, homeReady, homeSend, aiDetail, aiAsk } from './ai.js';
 import { renderTicket, saveImage } from './ticket.js';
 import { parseMessage } from './tarot-card.js';
+import { loadLibrary } from './library.js';
 
 // —— 小工具 ——
 function h(tag, attrs, ...children) {
@@ -656,6 +657,7 @@ function settingsSheet() {
 // —— 开工 ——
 async function main() {
   startStars();
+  await loadLibrary('./');          // 固定解牌库（没写的格自动退老表）
   await decor.loadWallpapers();
   decor.apply();
   await reloadReadings();

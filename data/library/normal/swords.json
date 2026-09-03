@@ -1,0 +1,996 @@
+{
+ "swords_01": {
+  "_name": "宝剑一",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_02": {
+  "_name": "宝剑二",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_03": {
+  "_name": "宝剑三",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_04": {
+  "_name": "宝剑四",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_05": {
+  "_name": "宝剑五",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_06": {
+  "_name": "宝剑六",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_07": {
+  "_name": "宝剑七",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_08": {
+  "_name": "宝剑八",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_09": {
+  "_name": "宝剑九",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_10": {
+  "_name": "宝剑十",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_11": {
+  "_name": "宝剑侍从",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_12": {
+  "_name": "宝剑骑士",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_13": {
+  "_name": "宝剑王后",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "swords_14": {
+  "_name": "宝剑国王",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ }
+}

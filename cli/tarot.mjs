@@ -12,6 +12,9 @@
 
 import { CARDS, CARD_BY_ID, SPREADS } from '../js/data/deck.js';
 import { build, render, spreadOf, cardData } from '../js/reading.js';
+import { loadLibraryFromFS } from './library.mjs';
+
+await loadLibraryFromFS();
 
 const ALIASES = { 今日: 'one', 今日一牌: 'one', 单张: 'one', 單張: 'one', 一张: 'one', 三张: 'three', 三張: 'three',
   本周: 'week', 本週: 'week', 每周: 'week', 关系: 'relation', 關係: 'relation', one: 'one', three: 'three', week: 'week', relation: 'relation' };

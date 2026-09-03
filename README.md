@@ -145,6 +145,10 @@ RELAY_TOKEN=随便一串 python3 proxy/relay.py      # 监听 8787
 
 设置里「转发地址」填 `https://你的地址/?token=那串`。它不看内容不存东西，只把请求原样转出去。放公网上一定要设 `RELAY_TOKEN`。
 
+## 固定解牌库（在建）
+
+解读文案正在从「按主题一段」升级成「牌名 + 正逆位 + 主题 + 牌位」一格一段：普通牌位 78 × 2 × 4 主题 × 6 牌位 = 3744 格，关系牌阵不叠主题 78 × 2 × 5 = 780 格，共 4524 格。结构、键名、进度工具见 `data/library/README.md`。没写的格自动退回老表，填一格生效一格。
+
 ## 聊天卡零件
 
 零件本身就是 `js/tarot-card.js` 一个文件（它会去拿 `js/data/`、`js/reading.js`、`js/cards.js`、`js/band.js`，所以整个 `js/` 和 `assets/` 一起放着，或者 `asset-base` 指到线上的占星室）。用法在上面「把小卡片装进自己家」。
@@ -186,6 +190,9 @@ reading（本地记录）：
 index.html            屋子
 js/app.js             整间屋的界面
 js/reading.js         客观解读框架（分类、牌位、牌面关系、整体、一句话）
+js/library.js         固定解牌库的读取（牌名 + 正逆 + 主题 + 牌位）
+data/library/         固定解牌库 JSON（4524 格，在填）
+cli/library.mjs       解牌库工具：stats / check / todo
 js/data/deck.js       78 张牌义 + 牌阵
 js/data/text.js       解读文本表：78 × 正逆 × 四类 + 建议
 js/ai.js              接别的模型（OpenAI 兼容 / Anthropic，可走转发）

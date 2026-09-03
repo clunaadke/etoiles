@@ -1,0 +1,1328 @@
+{
+ "major_00": {
+  "_name": "愚人",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_01": {
+  "_name": "魔术师",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_02": {
+  "_name": "女祭司",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_03": {
+  "_name": "皇后",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_04": {
+  "_name": "皇帝",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_05": {
+  "_name": "教皇",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_06": {
+  "_name": "恋人",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_07": {
+  "_name": "战车",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_08": {
+  "_name": "力量",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_09": {
+  "_name": "隐士",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_10": {
+  "_name": "命运之轮",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_11": {
+  "_name": "正义",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_12": {
+  "_name": "倒吊人",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_13": {
+  "_name": "死神",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_14": {
+  "_name": "节制",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_15": {
+  "_name": "恶魔",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_16": {
+  "_name": "高塔",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_17": {
+  "_name": "星星",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_18": {
+  "_name": "月亮",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_19": {
+  "_name": "太阳",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_20": {
+  "_name": "审判",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "major_21": {
+  "_name": "世界",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_01": {
+  "_name": "权杖一",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_02": {
+  "_name": "权杖二",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_03": {
+  "_name": "权杖三",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_04": {
+  "_name": "权杖四",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_05": {
+  "_name": "权杖五",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_06": {
+  "_name": "权杖六",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_07": {
+  "_name": "权杖七",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_08": {
+  "_name": "权杖八",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_09": {
+  "_name": "权杖九",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_10": {
+  "_name": "权杖十",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_11": {
+  "_name": "权杖侍从",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_12": {
+  "_name": "权杖骑士",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_13": {
+  "_name": "权杖王后",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "wands_14": {
+  "_name": "权杖国王",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_01": {
+  "_name": "圣杯一",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_02": {
+  "_name": "圣杯二",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_03": {
+  "_name": "圣杯三",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_04": {
+  "_name": "圣杯四",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_05": {
+  "_name": "圣杯五",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_06": {
+  "_name": "圣杯六",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_07": {
+  "_name": "圣杯七",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_08": {
+  "_name": "圣杯八",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_09": {
+  "_name": "圣杯九",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_10": {
+  "_name": "圣杯十",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_11": {
+  "_name": "圣杯侍从",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_12": {
+  "_name": "圣杯骑士",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_13": {
+  "_name": "圣杯王后",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "cups_14": {
+  "_name": "圣杯国王",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_01": {
+  "_name": "宝剑一",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_02": {
+  "_name": "宝剑二",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_03": {
+  "_name": "宝剑三",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_04": {
+  "_name": "宝剑四",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_05": {
+  "_name": "宝剑五",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_06": {
+  "_name": "宝剑六",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_07": {
+  "_name": "宝剑七",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_08": {
+  "_name": "宝剑八",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_09": {
+  "_name": "宝剑九",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_10": {
+  "_name": "宝剑十",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_11": {
+  "_name": "宝剑侍从",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_12": {
+  "_name": "宝剑骑士",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_13": {
+  "_name": "宝剑王后",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "swords_14": {
+  "_name": "宝剑国王",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_01": {
+  "_name": "星币一",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_02": {
+  "_name": "星币二",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_03": {
+  "_name": "星币三",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_04": {
+  "_name": "星币四",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_05": {
+  "_name": "星币五",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_06": {
+  "_name": "星币六",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_07": {
+  "_name": "星币七",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_08": {
+  "_name": "星币八",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_09": {
+  "_name": "星币九",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_10": {
+  "_name": "星币十",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_11": {
+  "_name": "星币侍从",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_12": {
+  "_name": "星币骑士",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_13": {
+  "_name": "星币王后",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ },
+ "pents_14": {
+  "_name": "星币国王",
+  "up": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  },
+  "rev": {
+   "me": "",
+   "him": "",
+   "between": "",
+   "block": "",
+   "toward": ""
+  }
+ }
+}

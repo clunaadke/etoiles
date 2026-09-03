@@ -1,0 +1,996 @@
+{
+ "cups_01": {
+  "_name": "圣杯一",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_02": {
+  "_name": "圣杯二",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_03": {
+  "_name": "圣杯三",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_04": {
+  "_name": "圣杯四",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_05": {
+  "_name": "圣杯五",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_06": {
+  "_name": "圣杯六",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_07": {
+  "_name": "圣杯七",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_08": {
+  "_name": "圣杯八",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_09": {
+  "_name": "圣杯九",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_10": {
+  "_name": "圣杯十",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_11": {
+  "_name": "圣杯侍从",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_12": {
+  "_name": "圣杯骑士",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_13": {
+  "_name": "圣杯王后",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "cups_14": {
+  "_name": "圣杯国王",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ }
+}

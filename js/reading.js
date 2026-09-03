@@ -7,6 +7,7 @@
 
 import { CARD_BY_ID, SPREADS } from './data/deck.js';
 import { CARD_TEXT } from './data/text.js';
+import { lookup, lookupRelation, positionKey, isRelationSpread } from './library.js';
 
 export const CATEGORIES = { love: '感情', work: '事业', self: '自我', daily: '日常' };
 
@@ -178,10 +179,12 @@ export function overall(cards, category) {
 }
 
 // 一句话：拿最重的那张（先大牌，再最后一张）说
-export function oneline(cards, category, question) {
+export function oneline(cards, category, question, spreadId) {
   let key = cards.find((c) => suitOf(c.id) === 'major') || cards[cards.length - 1];
+  const libKey = positionKey(spreadId || (cards.length > 1 ? 'three' : 'one'), key.position, question);
+  const fromLib = isRelationSpread(spreadId) ? lookupRelation(key.id, key.reversed, libKey) : lookup(key.id, key.reversed, category, libKey);
   const [raw] = entry(key.id, key.reversed, category);
-  const text = tense(raw, cards.length > 1 ? key.position : 'answer', question);
+  const text = fromLib || tense(raw, cards.length > 1 ? key.position : 'answer', question);
   const first = text.split(/[。！？]/, 1)[0];
   const name = (CARD_BY_ID[key.id] || {}).name || key.id;
   return `${name}${key.reversed ? '逆位' : '正位'}定调：${first}。`;
@@ -205,7 +208,10 @@ export function build(reading, category) {
     const card = CARD_BY_ID[cid] || {};
     const [rawText, rawAdvice] = entry(cid, rev, cat);
     const pos = sp.positions.length > 1 ? (c.position || '') : 'answer';
-    const text = tense(rawText, pos, reading.question);
+    // 先查固定解牌库（牌名 + 正逆 + 主题 + 牌位；关系牌阵不叠主题），那格没写再退老表 + 时态替换
+    const libKey = positionKey(sp.id, c.position, reading.question);
+    const fromLib = isRelationSpread(sp.id) ? lookupRelation(cid, rev, libKey) : lookup(cid, rev, cat, libKey);
+    const text = fromLib || tense(rawText, pos, reading.question);
     const advice = pos === 'past' ? '' : tense(rawAdvice, pos, reading.question);
     const intro = sp.positions.length > 1 ? (POSITION_INTRO[c.position || ''] || '') : POSITION_INTRO.answer;
     const suit = suitOf(cid);
@@ -214,7 +220,7 @@ export function build(reading, category) {
     outCards.push({
       id: cid, name: card.name || cid, reversed: rev,
       position: c.position || '', position_name: posname[c.position || ''] || '',
-      intro, nature, text, advice,
+      intro, nature, text, advice, source: fromLib ? 'library' : 'fallback',
       keywords: card[rev ? 'keywordsRev' : 'keywordsUp'] || [],
     });
     if (advice) advices.push(advice);
@@ -225,7 +231,7 @@ export function build(reading, category) {
     cards: outCards,
     relations: relations(cards),
     advice: advices,
-    oneline: oneline(cards, cat, reading.question),
+    oneline: oneline(cards, cat, reading.question, sp.id),
   };
 }
 

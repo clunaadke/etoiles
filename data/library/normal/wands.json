@@ -1,0 +1,996 @@
+{
+ "wands_01": {
+  "_name": "权杖一",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_02": {
+  "_name": "权杖二",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_03": {
+  "_name": "权杖三",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_04": {
+  "_name": "权杖四",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_05": {
+  "_name": "权杖五",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_06": {
+  "_name": "权杖六",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_07": {
+  "_name": "权杖七",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_08": {
+  "_name": "权杖八",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_09": {
+  "_name": "权杖九",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_10": {
+  "_name": "权杖十",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_11": {
+  "_name": "权杖侍从",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_12": {
+  "_name": "权杖骑士",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_13": {
+  "_name": "权杖王后",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ },
+ "wands_14": {
+  "_name": "权杖国王",
+  "up": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  },
+  "rev": {
+   "daily": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "love": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "work": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   },
+   "self": {
+    "single": "",
+    "daily": "",
+    "weekly": "",
+    "past": "",
+    "present": "",
+    "future": ""
+   }
+  }
+ }
+}
