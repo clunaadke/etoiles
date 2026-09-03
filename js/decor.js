@@ -114,7 +114,11 @@ class Decor extends EventTarget {
     this.apply();
   }
   /// 当前这套的壁纸：自己选的 > 默认图 > 没有（代码画的天）
-  get wallpaperURL() { return this.wallpaper[this.mode] || DEFAULT_WALLPAPER[this.mode] || null; }
+  /// 一律给绝对地址：相对路径塞进 CSS 变量里，会按样式表所在目录去解析（css/assets/…），就找不到图了
+  get wallpaperURL() {
+    const u = this.wallpaper[this.mode] || DEFAULT_WALLPAPER[this.mode] || null;
+    return u ? new URL(u, document.baseURI).href : null;
+  }
   get wallpaperIsCustom() { return !!this.wallpaper[this.mode]; }
   async setWallpaper(file) {
     const blob = await downscale(file, 2400);
