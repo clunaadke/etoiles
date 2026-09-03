@@ -6,7 +6,6 @@
 //   detectCategory(question, explicit?)   问题分类
 
 import { CARD_BY_ID, SPREADS } from './data/deck.js';
-import { CARD_TEXT } from './data/text.js';
 import { lookup, lookupRelation, positionKey, isRelationSpread, missingNotice, isDev, MISSING_PROD_SHORT } from './library.js';
 
 export const CATEGORIES = { love: '感情', work: '事业', self: '自我', life: '日常' };
@@ -30,18 +29,18 @@ export function detectCategory(question, explicit) {
 
 // 牌位前缀：这张牌落在这个位置上，先说这个位置在问什么
 export const POSITION_INTRO = {
-  answer: '单张牌阵，这张牌就是对问题最直接的回应，不分过去未来，说的是当下这件事的核心。',
-  past: '过去位说的是这件事的来处：已经发生、已经定型、还在往现在施加影响的那部分。',
-  present: '现在位说的是此刻的局面：正在起作用的力量，也是最能着手改变的地方。',
-  future: '未来位说的是照现在的走法会去到哪里。它不是判决，是趋势，改了现在就改了它。',
-  axis: '本周主线是这一周的核心状态，其他事都会被它染上颜色。',
-  gentle: '需要注意位说的是这周可能遇到的阻碍或风险，先看见，就不会被绊倒。',
+  answer: '单张牌阵用一张牌回应问题，重点是提供一个观察角度，不替现实下结论。',
+  past: '过去位用来观察这件事可能的来处：哪些旧经验或模式仍在影响现在。',
+  present: '现在位用来观察眼下较突出的力量，也是比较容易着手调整的地方。',
+  future: '未来位说的是照当前走法可能形成的趋势，不是判决；现在改变，趋势也会改变。',
+  axis: '本周主线提供这一周的核心观察角度，其他牌围绕它补充细节。',
+  gentle: '需要注意位提示这周可能出现的阻碍或风险，提前看见会更容易应对。',
   action: '行动建议位说的是这周适合怎么做，是动作，不是心情。',
-  me: '「我」位是提问者自己在这段关系里的状态和姿态，不是 ta 眼里的你，是牌看见的你。',
-  him: '「ta」位是 ta 此刻的状态和态度。牌只描述 ta 的位置，不替 ta 表态。',
-  between: '「我们之间」说的是两个人中间那股力：关系本身的质地，不属于任何一方。',
-  block: '「阻碍」位点出卡住这件事的东西。逆位在这里反而常常说明阻力正在松。',
-  toward: '「走向」是这段关系照现在的样子往前走的方向，是趋势，不是结局。',
+  me: '「我」位提供一个观察自己在关系中状态和姿态的角度，不代表 ta 眼里的你。',
+  him: '「ta」位反映 ta 可能呈现的状态或姿态，不读取内心，也不替 ta 表态。',
+  between: '「我们之间」用来观察关系目前可能呈现的互动模式，不替任何一方下定义。',
+  block: '「阻碍」位提示可能卡住关系的模式；正逆位都需要结合真实互动判断。',
+  toward: '「走向」是关系照当前模式可能形成的趋势，不是结局。',
 };
 
 const SUIT_THEME = {
@@ -50,43 +49,10 @@ const SUIT_THEME = {
   swords: ['宝剑', '风', '思考、冲突、真相'],
   pents: ['星币', '土', '现实、身体、金钱'],
 };
-const MAJOR_INTRO = '大阿卡那说的是人生层面的大课题，不是日常小事，也不太由个人意志左右。';
+const MAJOR_INTRO = '大阿卡那通常强调阶段、方向或重要主题，具体怎样落到现实仍取决于处境和选择。';
 const CLASH = new Set(['fire|water', 'water|fire', 'air|earth', 'earth|air']);
 const ELEMENT = { wands: 'fire', cups: 'water', swords: 'air', pents: 'earth' };
 
-function entry(cid, rev, cat) {
-  const e = CARD_TEXT[cid] || {};
-  const side = e[rev ? 'rev' : 'up'] || {};
-  return [side[cat] || side.life || '', side.advice || ''];
-}
-
-// 时态（0903 她抓的：日常那套文案全是「今天……」，落在过去 / 未来 / 本周 / 关系位上就不对）。
-// 表里的话按「今天」写，这里按牌位把「今天」换成对的时间词；过去位的建议不给（对过去提建议没意义）。
-const SCOPE = {
-  past: '之前', present: '眼下', future: '接下来',
-  axis: '这周', action: '这周', gentle: '这周',
-  me: '这段时间', him: '这段时间', between: '这段时间', block: '这段时间', toward: '接下来',
-};
-const PAST_VERBS = [['会好', '好过'], ['会来', '来过'], ['会发', '发过'], ['会乱', '乱过'], ['会比', '比'], ['会更', '更'], ['会很', '很'], ['会到', '到了'], ['会轻', '轻了'], ['会软', '软了'], ['会被', '被'], ['会觉', '觉得'], ['会踏', '踏'], ['会因', '因']];
-export function tense(text, position, question) {
-  if (!text) return text;
-  const isDaily = !question || question === DAILY_QUESTION;
-  if (position === 'answer' || !position) {
-    if (isDaily) return text;                      // 每日一牌：就是说今天
-    return text.replace(/今天|今日/g, '眼下').replace(/明天/g, '过两天').replace(/昨天/g, '之前');
-  }
-  const scope = SCOPE[position] || '这段时间';
-  let t = text.replace(/今天|今日/g, scope);
-  if (position === 'past') {
-    t = t.replace(/明天/g, '后来').replace(/昨天/g, '更早').replace(/适合/g, '一直在').replace(/会有/g, '有过');
-    for (const [a, b] of PAST_VERBS) t = t.split(a).join(b);   // 「会好」→「好过」这类，过去位不说将来话
-  } else if (position === 'future' || position === 'toward') {
-    t = t.replace(/明天/g, '再往后').replace(/昨天/g, '现在');
-  } else {
-    t = t.replace(/明天/g, '过两天').replace(/昨天/g, '之前');
-  }
-  return t;
-}
 const suitOf = (cid) => cid.split('_')[0];
 const numOf = (cid) => { const n = parseInt(cid.split('_')[1], 10); return Number.isNaN(n) ? -1 : n; };
 const isCourt = (cid) => suitOf(cid) !== 'major' && numOf(cid) >= 11;
@@ -106,11 +72,11 @@ export function relations(cards) {
   const courts = cards.filter((c) => isCourt(c.id));
 
   if (majors.length === n) {
-    notes.push('全是大阿卡那。这件事的分量比问题本身重，走向多半不在提问者手里，能做的是认清阶段、别硬拧。');
+    notes.push('全是大阿卡那，牌面更强调阶段与方向。它不代表事情不受你控制，仍要结合现实处境和选择来判断。');
   } else if (majors.length >= Math.max(2, Math.floor(n / 2) + 1)) {
-    notes.push(`${n} 张里 ${majors.length} 张大阿卡那，说明这不是琐事，是一段会留下痕迹的经历，小牌只是它的细节。`);
+    notes.push(`${n} 张里有 ${majors.length} 张大阿卡那，牌面把重点放在阶段与方向上；小牌补充具体的情绪和行动。`);
   } else if (!majors.length) {
-    notes.push('没有大阿卡那，全是小牌：这件事在日常尺度上，靠具体的动作和态度就能推动，不用等命运表态。');
+    notes.push('没有大阿卡那，全是小牌：牌面更关注日常尺度和具体行动，不需要把它理解成命运式的结论。');
   }
 
   const suitKeys = Object.keys(suits);
@@ -119,33 +85,33 @@ export function relations(cards) {
     for (const k of suitKeys) if (suits[k] > suits[top]) top = k;
     if (suits[top] >= 2 && suits[top] >= Math.floor(n / 2)) {
       const [zh, el, theme] = SUIT_THEME[top];
-      notes.push(`${zh}压阵（${suits[top]} 张）。${el}元素说的是${theme}，这件事的重心在这里，别在别的层面找答案。`);
+      notes.push(`${zh}较多（${suits[top]} 张）。${el}元素强调${theme}，可以优先从这个角度理解这组牌。`);
     }
     const elems = suitKeys.map((s) => ELEMENT[s]);
     let clash = false;
     for (const a of elems) for (const b of elems) if (a !== b && CLASH.has(a + '|' + b)) clash = true;
-    if (clash) notes.push('牌里同时有相克的元素，说明这件事里有两股拧着的力：一边想动、一边想稳，或者一边讲理、一边讲情。冲突本身就是主题。');
+    if (clash) notes.push('牌里同时出现相克元素，可能提示两种需求正在拉扯：例如一边想动、一边想稳，或一边讲理、一边讲情。');
   }
 
   if (revs.length === n && n >= 2) {
-    notes.push('全部逆位。不是全坏，是每一股力量都在往内收、往回走，这段时间适合停、适合收拾，不适合推。');
+    notes.push('全部逆位不等于全坏，更像是力量向内、受阻或需要调整。比起硬推，先复盘可能更合适。');
   } else if (revs.length >= Math.floor((n + 1) / 2) + (n >= 4 ? 1 : 0)) {
-    notes.push(`逆位占了 ${revs.length} 张，阻力比推力多，很多事会比预想的慢，慢是正常的。`);
+    notes.push(`逆位占了 ${revs.length} 张，牌面提示需要调整的地方较多，推进节奏可能比预想中慢。`);
   } else if (!revs.length) {
-    notes.push('全部正位，能量顺着走，牌说的事大体会照它本来的样子发生，少折腾就是最好的策略。');
+    notes.push('全部正位，牌义表达得较直接，但这仍然只是趋势，不代表结果已经确定。');
   }
 
   if (courts.length >= 2) {
-    notes.push(`出了 ${courts.length} 张宫廷牌，这件事里「人」的因素很重：不是事情本身难，是几个人的立场和脾气在起作用。`);
+    notes.push(`出了 ${courts.length} 张宫廷牌，可以多留意参与者的立场、沟通和分工，但不据此猜测任何人的内心。`);
   }
 
   const nums = cards.filter((c) => suitOf(c.id) !== 'major' && numOf(c.id) >= 1 && numOf(c.id) <= 10).map((c) => numOf(c.id));
   const REPEAT = {
-    1: '重复出现的一：好几件事同时在起头。', 2: '重复的二：处处都在二选一或两两配对。',
-    3: '重复的三：事情正在长出第一批结果。', 4: '重复的四：多处停滞，求稳过了头。',
-    5: '重复的五：多处摩擦和损失，是过渡期的样子。', 6: '重复的六：多处在修复、在回望。',
-    7: '重复的七：多处在评估、在守。', 8: '重复的八：多处在赶工、在挣脱。',
-    9: '重复的九：多处接近完成，也接近临界点。', 10: '重复的十：多处到头了，该收尾。',
+    1: '重复出现的一强调开端与主动。', 2: '重复的二强调选择、配对与平衡。',
+    3: '重复的三强调发展、协作与初步成果。', 4: '重复的四强调稳定，也提醒留意停滞。',
+    5: '重复的五强调摩擦、损失或过渡。', 6: '重复的六强调修复、回望与重新平衡。',
+    7: '重复的七强调评估、坚持与取舍。', 8: '重复的八强调推进、调整或挣脱。',
+    9: '重复的九强调接近完成，也提醒留意压力。', 10: '重复的十强调阶段完成、负担与收尾。',
   };
   for (const k of new Set(nums)) {
     if (nums.filter((x) => x === k).length >= 2) { notes.push(REPEAT[k]); break; }
@@ -165,8 +131,8 @@ export function overall(cards, category) {
     const tone = c.reversed ? '逆位' : '正位';
     return `单张牌阵，按${cat}来读。抽到${card.name || ''}${tone}，` +
       (suitOf(c.id) === 'major'
-        ? '这是一张大牌，说明问的事比表面上重，答案在阶段和方向上，不在细节上。'
-        : '这是一张小牌，答案落在具体的日常动作上，做得到、也看得见。');
+        ? '这是一张大牌，解读重点放在阶段和方向上，再结合现实细节判断。'
+        : '这是一张小牌，解读重点放在具体的日常感受和行动上。');
   }
   const parts = [`${n} 张牌，按${cat}来读。`];
   if (majors === 0) parts.push('整副没有大牌，气场是日常的、可操作的。');
@@ -207,13 +173,14 @@ export function build(reading, category) {
     const cid = c.id;
     const rev = !!c.reversed;
     const card = CARD_BY_ID[cid] || {};
-    const [rawText, rawAdvice] = entry(cid, rev, cat);
     const pos = sp.positions.length > 1 ? (c.position || '') : 'answer';
     // 查固定解牌库（牌名 + 正逆 + 主题 + 牌位；关系牌阵不叠主题）。开发期没写的格不退老表，显示缺失提示并记下
     const libKey = positionKey(sp.id, c.position, reading.question);
     const fromLib = isRelationSpread(sp.id) ? lookupRelation(cid, rev, libKey) : lookup(cid, rev, cat, libKey);
     const text = fromLib || missingNotice({ cardId: cid, cardName: card.name || cid, reversed: rev, theme: isRelationSpread(sp.id) ? null : cat, position: libKey });
-    const advice = pos === 'past' ? '' : tense(rawAdvice, pos, reading.question);
+    // 固定模式只使用对应牌位的库文案，不再混入旧 CARD_TEXT 的通用建议。
+    // 通用建议会跨牌位、跨时间复用，既重复，也可能与当前固定解读冲突。
+    const advice = '';
     const intro = sp.positions.length > 1 ? (POSITION_INTRO[c.position || ''] || '') : POSITION_INTRO.answer;
     const suit = suitOf(cid);
     const nature = suit === 'major' ? MAJOR_INTRO
