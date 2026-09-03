@@ -129,7 +129,7 @@ function render() {
 
 // —— 选牌阵 + 问题 ——
 const DAILY = { id: 'one', cardID: 'major_19', name: '今日一牌', hint: '听听今天想告诉你的话' };
-const WEEK = { id: 'week', cardID: 'major_17', name: '本周運勢', hint: '本周主轴 · 行动建议 · 温柔提醒' };
+const WEEK = { id: 'week', cardID: 'major_17', name: '本周運勢', hint: '本周主线 · 需要注意 · 行动建议' };
 const ENTRIES = [
   { id: 'one', cardID: 'major_01', name: '單張' },
   { id: 'three', cardID: 'major_18', name: '三張' },

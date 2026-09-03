@@ -1920,19 +1920,19 @@ export const SPREADS = [
  {
   "id": "week",
   "name": "本周",
-  "hint": "本周主轴 · 行动建议 · 温柔提醒",
+  "hint": "本周主线 · 需要注意 · 行动建议",
   "positions": [
    {
     "key": "axis",
-    "name": "本周主轴"
+    "name": "本周主线"
+   },
+   {
+    "key": "gentle",
+    "name": "需要注意"
    },
    {
     "key": "action",
     "name": "行动建议"
-   },
-   {
-    "key": "gentle",
-    "name": "温柔提醒"
    }
   ]
  },
