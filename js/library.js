@@ -4,7 +4,7 @@
 //   主题：life 日常 / love 感情 / work 事业 / self 自我
 //   → 78 × 2 × 4 × 8 = 4992 条，文件 data/library/normal/{majors,wands,cups,swords,pents}.json
 //
-//   关系牌阵单独一套，不叠主题：me 我 / him 他 / between 我们之间 / block 阻碍 / toward 走向
+//   关系牌阵单独一套，不叠主题：me 我 / him ta / between 我们之间 / block 阻碍 / toward 走向
 //   → 78 × 2 × 5 = 780 条，文件 data/library/relation.json
 //
 // 文件是纯 JSON，空字符串 = 还没写。开发期没写的格不退老表：页面上显示「缺失」提示并记下牌名 / 正逆 / 主题 / 牌位
@@ -51,8 +51,23 @@ export function lookupRelation(cardId, reversed, pos) {
 }
 export const libraryLoaded = () => lib.loaded;
 
-// —— 开发期缺失记录 ——
-// 没写的格：页面显示这句提示，并把牌名 / 正逆 / 主题 / 牌位记进 missing（同一格只记一次），console 也打一行。
+// —— 开发 / 正式 ——
+// 开发环境 = Node、本机（localhost / 127.0.0.1 / 内网地址）、地址带 ?dev=1、或 localStorage 里 chambre-dev = 1。
+// 缺格提示：开发环境带牌名 / 正逆 / 主题 / 牌位；正式环境只显示「暂不可读」，不露任何开发字段。两种环境都记进 missingLog。
+export function isDev() {
+  if (typeof location === 'undefined') return true;
+  try {
+    const h = location.hostname;
+    if (h === 'localhost' || h === '127.0.0.1' || /^(10\.|172\.(1[6-9]|2\d|3[01])\.|192\.168\.)/.test(h)) return true;
+    if (new URLSearchParams(location.search).get('dev') === '1') return true;
+    return localStorage.getItem('chambre-dev') === '1';
+  } catch { return false; }
+}
+export const MISSING_PROD = '这一格的牌义暂时还读不了，请过些天再来。';
+export const MISSING_PROD_SHORT = '（这一格暂时还读不了）';
+
+// —— 缺失记录 ——
+// 没写的格：页面显示提示（开发 / 正式两种措辞见上），并把牌名 / 正逆 / 主题 / 牌位记进 missing（同一格只记一次），console 也打一行。
 const missing = new Map();
 export function missingNotice({ cardId, cardName, reversed, theme, position }) {
   const side = reversed ? '逆位' : '正位';
@@ -63,6 +78,7 @@ export function missingNotice({ cardId, cardName, reversed, theme, position }) {
     missing.set(key, { cardId, cardName, reversed, theme: theme || null, position, at: new Date().toISOString() });
     if (typeof console !== 'undefined') console.warn('[解牌库缺失]', cardName, side, themeName || '关系', posName);
   }
+  if (!isDev()) return MISSING_PROD;
   const where = theme ? `${themeName} · ${posName}` : `关系 · ${posName}`;
   return `【开发期缺失】${cardName}${side} · ${where}：这一格固定牌义还没写。`;
 }
@@ -74,7 +90,7 @@ export function loadLibraryFrom({ normal = {}, relation = {} } = {}) {
   return lib;
 }
 
-/// 浏览器里：并行拉六个 JSON，坏了一个不影响别的（那部分就走老表）
+/// 浏览器里：并行拉六个 JSON，坏了一个不影响别的（那部分按缺格处理）
 export function loadLibrary(base = './') {
   if (loading) return loading;
   loading = (async () => {

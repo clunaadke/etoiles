@@ -7,7 +7,7 @@
 
 import { CARD_BY_ID, SPREADS } from './data/deck.js';
 import { CARD_TEXT } from './data/text.js';
-import { lookup, lookupRelation, positionKey, isRelationSpread, missingNotice } from './library.js';
+import { lookup, lookupRelation, positionKey, isRelationSpread, missingNotice, isDev, MISSING_PROD_SHORT } from './library.js';
 
 export const CATEGORIES = { love: '感情', work: '事业', self: '自我', life: '日常' };
 
@@ -184,7 +184,7 @@ export function oneline(cards, category, question, spreadId) {
   const libKey = positionKey(spreadId || (cards.length > 1 ? 'three' : 'one'), key.position, question);
   const fromLib = isRelationSpread(spreadId) ? lookupRelation(key.id, key.reversed, libKey) : lookup(key.id, key.reversed, category, libKey);
   const name0 = (CARD_BY_ID[key.id] || {}).name || key.id;
-  if (!fromLib) return `${name0}${key.reversed ? '逆位' : '正位'}定调：（这一格固定牌义还没写）`;
+  if (!fromLib) return `${name0}${key.reversed ? '逆位' : '正位'}定调：${isDev() ? '（这一格固定牌义还没写）' : MISSING_PROD_SHORT}`;
   const text = fromLib;
   const first = text.split(/[。！？]/, 1)[0];
   const name = (CARD_BY_ID[key.id] || {}).name || key.id;

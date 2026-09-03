@@ -657,7 +657,7 @@ function settingsSheet() {
 // —— 开工 ——
 async function main() {
   startStars();
-  await loadLibrary('./');          // 固定解牌库（没写的格自动退老表）
+  await loadLibrary('./');          // 固定解牌库（没写的格显示缺失提示，不退老表）
   await decor.loadWallpapers();
   decor.apply();
   await reloadReadings();

@@ -4,7 +4,7 @@
 //   node cli/library.mjs stats          填了多少格（按主题 / 牌位分）
 //   node cli/library.mjs check          查结构：牌 id 全不全、键名对不对、有没有多出来的字段
 //   node cli/library.mjs todo [n]       列前 n 个还没写的格（默认 20），给写文案的人排队用
-//   node cli/library.mjs sample [n]     从已写的格里随机抽 n 组（默认 8）：过去 / 未来 / 本周主线 / 需要注意 / 关系 ta / 阻碍 / 走向，走 build() 打印实际输出
+//   node cli/library.mjs sample [n]     从已写的格里随机抽 n 组（默认 8）：过去 / 未来 / 本周主线 / 需要注意 / 行动建议 / 关系 ta / 阻碍 / 走向，走 build() 打印实际输出
 //   node cli/library.mjs batch          一批写完跑这个：check + stats + 重复键 + sample
 //
 // 别的脚本也能 import { loadLibraryFromFS } 直接把库装进内存。
@@ -115,9 +115,10 @@ async function sample(files, n) {
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const spots = [
     ['过去', () => ({ spread: 'three', question: pick(['', '这件事会怎么样', '我们之间', '这份工作']), pos: 'past' })],
-    ['未来', () => ({ spread: 'three', question: pick(['', '他会回来吗', '这个项目', '我该不该换']), pos: 'future' })],
+    ['未来', () => ({ spread: 'three', question: pick(['', 'ta 会回来吗', '这个项目', '我该不该换']), pos: 'future' })],
     ['本周主线', () => ({ spread: 'week', question: '本周运势', pos: 'axis' })],
     ['需要注意', () => ({ spread: 'week', question: '本周运势', pos: 'gentle' })],
+    ['行动建议', () => ({ spread: 'week', question: '本周运势', pos: 'action' })],
     ['关系 ta', () => ({ spread: 'relation', question: '我们之间', pos: 'him' })],
     ['阻碍', () => ({ spread: 'relation', question: '我们之间', pos: 'block' })],
     ['走向', () => ({ spread: 'relation', question: '我们之间', pos: 'toward' })],
@@ -153,7 +154,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
     console.log(`写满 74 格的牌：${full.length} 张（${full.map((x) => x.name).join('、')}）`);
     if (partial.length) console.log(`✗ 写了一半的牌（每张必须 74 格）：${partial.map((x) => x.name).join('、')}`);
     console.log('');
-    await sample(files, 7);
+    await sample(files, 8);
   } else if (cmd === 'stats') {
     loadLibraryFrom(files);
     const c = coverage();
