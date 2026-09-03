@@ -1,6 +1,6 @@
 // 离线：壳子（页面 / 脚本 / 样式 / 字体 / 牌背 / 边框）装机时预存；78 张牌面第一次看到时存起来。
 // 改了代码记得把 VERSION 加一，老缓存才会换掉。
-const VERSION = 'chambre-v23';
+const VERSION = 'chambre-v24';
 const SHELL = [
   './', './index.html', './manifest.webmanifest',
   './css/app.css',
